@@ -835,4 +835,46 @@
 # list101 = [items for items in list100]
 # print(list101)
 
-#
+# ================= Tuples in Python ====================
+# list1 = ['Haris', 'Amin', 'Bilal']  # mutable (it can be changed)
+# tuple_1 = ('Haris', 'Amin', 'Bilal')  # immutable (it cant be changed)
+# print(tuple_1)
+# print(len(tuple_1))
+# print(type(tuple_1))
+
+# tuple_1 = ('Haris', 'Amin', 'Bilal')
+# tuple_2 = (1, 2, 3)
+# tuple_3 = (9.99, 5.5, 66.01)
+# tuple_4 = (5j, 8j)
+# tuple_5 = (True, False)
+# tuple_6 = ('Haris', 1, 5.45, 9j, True)
+
+# students = ['Haris', 'Amin', 'Bilal']
+# classes = ('9th')
+# Name = str(input('Enter Your Name: '))
+# print(Name)
+
+# ================ Tuple Formatting =================
+
+# tuple_1 = ('Haris', 'Amin', 'Bilal')
+# tuple_2 = (1, 2, 3)
+# tuple_3 = (9.99, 5.5, 66.01)
+# tuple_4 = (5j, 8j)
+# tuple_5 = (True, False)
+
+# print(tuple_1 + tuple_2 + tuple_3 + tuple_4 + tuple_5)  # joining tuples
+
+# print('Tuple 1 is {}, Tuple 2 is {}, Tuple 3 is {}, Tuple 4 is {}, Tuple 5 is {},'.format(tuple_1, tuple_2, tuple_3, tuple_4, tuple_5))
+
+# print('Tuple 1 is {},\nTuple 2 is {},\nTuple 3 is {},\nTuple 4 is {},\nTuple 5 is {},'.format(tuple_1, tuple_2, tuple_3, tuple_4, tuple_5))
+
+# print('Tuple 1 is %s,\nTuple 2 is %s,\nTuple 3 is %s,\nTuple 4 is %s,\nTuple 5 is %s,' % (tuple_1, tuple_2, tuple_3, tuple_4, tuple_5))
+
+# print(f'Tuple 1 is {tuple_1},\nTuple 2 is {tuple_2},\nTuple 3 is {tuple_3},\nTuple 4 is {tuple_4},\nTuple 5 is {tuple_5}')
+
+# print('This is the main Tuple : {}'.format(tuple_1 + tuple_2 + tuple_3 + tuple_4 + tuple_5))
+
+# ==================== Tuple Constructor ================
+
+# myTuple = tuple(('Bilal', 'farhan', 'Haris'))
+# print(myTuple)
