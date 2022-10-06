@@ -812,3 +812,43 @@
 
 # del list
 # print(list)
+
+# ===================== list comprehension using loops ========================
+
+# ================== for loop ===================
+
+# list = ['haris', 'amin', 'farhan']
+# for items in list:
+#     print(items)
+
+# list = ['haris', 'amin', 'farhan']
+# for index in range(len(list)):
+#     print(index)
+
+# list = ['haris', 'amin', 'farhan']
+# for haris in range(len(list)):
+#     print(haris)
+#     print(list[haris])
+#     print(list)
+
+# ================== while loop =================
+
+# list = ['zahid', 'zubair', 'basim', 'sohail']
+# x = 1
+# while x < len(list):
+#     print(list[x])
+#     x = x + 1
+
+# ======================== list comprehension ===========================
+
+# listA = ['ashar', 'ali', 'sami', 'furqan', 'saim', 'asharib']
+# listB = []
+# for items in listA:
+#     listB.append(items)
+#     print(listB)
+
+# listC = ['ali', 'basit', 'talha']
+# listD = [items for items in listC]
+# print(listD)
+
+# ==================================== tuples in python ============================================

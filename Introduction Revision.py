@@ -829,13 +829,14 @@
 # list101 = []
 # for items in list100:
 #     list101.append(items)
-# print(list101)
+#     print(list101)
 
 # list100 = ['Haris', 'Bilal', 'Amin', 'Farhan', 'Sami']
 # list101 = [items for items in list100]
 # print(list101)
 
-# ================= Tuples in Python ====================
+# ========================== Tuples in Python ================================
+
 # list1 = ['Haris', 'Amin', 'Bilal']  # mutable (it can be changed)
 # tuple_1 = ('Haris', 'Amin', 'Bilal')  # immutable (it cant be changed)
 # print(tuple_1)
