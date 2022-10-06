@@ -514,3 +514,302 @@
 # print(numbers.count(44))
 # print(numbers.index(9))
 # print(numbers.index(3))
+
+# ============================== arrays ================================
+
+# arrays are used for storing multiple values in a single variable
+
+# from audioop import reverse
+# from cgi import print_form
+
+
+# array_1 = ['haris', 'bilal', 'farhan', 'amin', 'rehan']
+# print(array_1)
+
+# array_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# print(array_2)
+
+# array_3 = [1.5, 54.7, 7.7, 2.9]
+# print(array_3)
+
+# array_4 = [3j, 5j, 9j, 1j, 2j]
+# print(array_4)
+
+# array_5 = ['haris', 'bilal', 1, 2, 3, 2.5, 4.1, 8j, 9j]
+# print(array_5)
+
+# print(array_1, array_2, array_3, array_4, array_5)
+
+# print(array_1+array_2+array_3+array_4+array_5)
+
+# print(f'{Array_1}\n{Array_2}\n{Array_3}\n{Array_4}\n{Array_5}')
+
+# print('{}\n{}\n{}\n{}\n{}'.format(Array_1,Array_2,Array_3,Array_4,Array_5))
+
+# print('%s\n%s\n%s\n%s\n%s'%(Array_1,Array_2,Array_3,Array_4,Array_5))
+
+# print('%s%s%s%s%s'%(Array_1,Array_2,Array_3,Array_4,Array_5))
+
+# print('%s'% (Array_1+Array_2+Array_3+Array_4+Array_5))
+
+#             0        1       2  3  4  5    6    7   8
+# array_5 = ['haris', 'bilal', 1, 2, 3, 2.5, 4.1, 8j, 9j]
+# print(array_5)
+
+# print(array_5[6])
+
+# Changing Index Item in Array
+
+# array_5[6] = 'Haris Zuberi'
+# print(array_5)
+#
+# array_5[0] = 'Amin Zuberi'
+# print(array_5)
+
+# length of list
+
+# print(len(array_5))
+
+# to add an item in  the list at last we use .append()
+# array_5.append('Bilal Zuberi')
+# print(array_5)
+
+# array_5.pop()
+# print(array_5)
+
+# array_5.pop(1)
+# print(array_5)
+
+# array_5.remove(8j)
+# print(array_5)
+
+# array_6 = ['Haris', 'Bilal', 'Amin']
+# array_5.extend(array_6)
+# print(array_5)
+
+# print(array_5+array_6)
+
+# array_7 = array_6.copy()
+# print(array_7)
+# array_7 = array_6
+# print(array_7)
+
+# print(array_5.count('Haris'))
+# print(array_5.count('Sami'))
+# print(array_5.index('farhan'))
+
+# array_6 = ['Haris', 'Bilal', 'Amin']
+# array_6.insert(0, 'Haris Zuberi')
+# print(array_6)
+
+# array_6.insert(1, 'Haris Zuberi')
+# print(array_6)
+
+# array_6.reverse()
+# print(array_6)
+
+# array_6.sort()
+# print(array_6)
+
+# array_6.sort(reverse=True)
+# print(array_6)
+
+# ====================================== LISTS ===============================================
+
+# list1 = ['bilal', 'haris', 'farhan', 'amin']
+# list2 = [200, 300, 400, 500]
+# list3 = [2.2, 3.3, 4.44, 5.53, 9.1]
+# list4 = [2j, 3j, 4j, 9j, 1j]
+# list5 = [True, False, None]
+
+# print(list1, list2, list3, list4, list5)
+# print(list1+list2+list3+list4+list5)
+
+# =================== list to string =====================
+
+# list1 = ['bilal', 'haris', 'farhan', 'amin']
+# list2 = [200, 300, 400, 500]
+# list3 = [2.2, 3.3, 4.44, 5.53, 9.1]
+# list4 = [2j, 3j, 4j, 9j, 1j]
+# list5 = [True, False, None]
+
+# print('{}{}{}{}{}'.format(list1, list2, list3, list4, list5))
+
+# print('%s%s%s%s%s' % (list1, list2, list3, list4, list5))
+# print('%s' % (list1+list2+list3+list4+list5))
+# print('%s' % (list1+list2+list3+list4+list5))
+
+# print(f'{list1}{list2}{list3}{list4}{list5}')
+# print(f'{list1}+{list2}+{list3}+{list4}+{list5}')
+# print(f'{list1}+\n{list2}+\n{list3}+\n{list4}+\n{list5}')
+
+# ============== access items in the list ================
+
+# index    0        1        2    3    4    5
+# index    0       -5       -4   -3   -2   -1
+# list = ['bilal', 'haris',  1,   2,   6,   3.5]
+
+# print(list[5])
+# print(list[2])
+# print(list[-3])
+# print(list[-5])
+# print(list[0])
+
+# ============== changing items in the list ================
+
+# index  0        1       2        3         4        5      6
+# list = ['haris', 'amin', 'bilal', 'farhan', 'qadir', 'ali', 'saim']
+
+# print(list)
+
+# list[2] = 'moin '
+# print(list)
+
+# list[6] = 112
+# print(list)
+
+# list[0] = 'saud'
+# print(list)
+
+# list[2:6] = ['hamza', 'zain', 'hadi', 'anas']
+# print(list)
+
+# list[2:7] = ['hamza', 'zain', 'hadi', 'anas', 'ahmed']
+# print(list)
+
+# ============== adding items in the list ================
+
+# there are three ways to add items in the list ( append, insert, extend )
+
+# list1 = ['farhan', 'zakir', 'zohaib', 'zafar']
+# list2 = ['faizan', 'sohaib', 'zulekha']
+
+# list1.append('zainab')
+# print(list)
+
+# list1.insert(3, 'zulfiqar')
+# print(list)
+
+# list1.extend(list2)
+# print(list1)
+
+# myTuple = (1, 4, 8)
+# list1.extend(myTuple)
+# print(list1)
+
+# myTuple = ('jiju', 'joja', 'jaji')
+# list1.extend(myTuple)
+# print(list1)
+
+# =============== removing items from the list ================
+
+# list = ['Amin', 'Sami', 'Ali', 'Haris', 'Farhan', 'Bilal', 'Kamran']
+
+# list.remove('Haris')
+# print(list)
+
+# pop always removes the last item of the list if we donot mention anything in the brackets.
+
+# list.pop()
+# print(list)
+
+# list.pop(3)
+# print(list)
+
+# del list[3]
+# print(list)
+
+# del list
+# print(list)
+
+# list.clear()
+# print(list)
+
+# ====================== slicing list ======================
+
+# ================= index to item ===================
+
+#        0        1     2   3   4    5
+#        0       -5    -4  -3  -2   -1
+# list = ['ahmed', 'ali', 98, 32, 4.5, 8.9]
+
+# print(list)
+# print(list[-1])
+# print(list[0])
+# print(list[3])
+# print(list[-3])
+# print(list[-5])
+# print(list[5])
+# print(list[:])
+# print(list[2:5])
+# print(list[1:])
+# print(list[-5:-1])
+# print(list[:-4])
+
+# ============ item to index =============
+
+# list = ['ahmed', 'ali', 98, 32, 4.5, 8.9]
+
+# print(list.index(4.5))
+# print(list.index(32))
+# print(list.index('ali'))
+
+# =========== changing items in the list =============
+
+#        0        1        2        3      4         5
+# list = ['ahmed', 'zafar', 'zakir', 'ali', 'farhan', 'haris']
+
+# print(list)
+
+# list[3] = 'haris'
+# print(list)
+
+# list[0] = 'bilal'
+# print(list)
+
+# list[1:4] = 'zain', 'amin', 'shoaib'
+# print(list)
+
+# list[2:5] = 'amin'
+# print(list)
+
+# list = [200, 300, 400, 500, 600, 700]
+# list[2] = 'amin'
+# print(list)
+
+# =========== adding items in the list ============
+
+# listA = ['haris', 'amin', 'bilal', 'farhan']
+# listB = ['hamza', 'talha', 'saud', 'huzaifa']
+
+# listA.append('taha')
+# print(listA)
+
+# listA.insert(1, 'saad')
+# print(listA)
+
+# listA.extend(listB)
+# print(listA)
+
+# ========== removing items from the list =============
+
+#        0         1        2       3        4
+# list = ['farhan', 'bilal', 'hadi', 'haris', 'amin']
+
+# print(list)
+
+# list.remove('haris')
+# print(list)
+
+# list.pop()
+# print(list)
+
+# list.pop(2)
+# print(list)
+
+# list.clear()
+# print(list)
+
+# del list
+# print(list)
+#
