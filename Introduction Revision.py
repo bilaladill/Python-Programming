@@ -879,3 +879,166 @@
 
 # myTuple = tuple(('Bilal', 'farhan', 'Haris'))
 # print(myTuple)
+
+# ==================== Accessing Tuples ================
+#           0    1    2    3    4    5    6
+#           0   -6   -5   -4   -3   -2   -1
+# myTuple = ('A', 'B', 'C', 'D', 'E', 'F', 'G')
+# print(myTuple)
+# print(myTuple[0])
+# print(myTuple[5])
+# print(myTuple[4])
+# print(myTuple[-4])
+# print(myTuple[-1])
+# print(myTuple[-6])
+# print(myTuple[:])
+# print(myTuple[3:])
+# print(myTuple[:5])
+# print(myTuple[3:6])
+# print(myTuple[-3:])
+# print(myTuple[:-5])
+# print(myTuple[0:0])
+# print(myTuple[-6:-2])
+#
+# myInput = input('What Do You Want To Find In myTuple? ')
+# if myInput in myTuple:
+#     print('This Item Exist in myTuple')
+#
+# else:
+#     print('This Item Does Not Exist in myTuple')
+
+# print(myTuple.index('B'), myTuple[1])
+
+# ==================== Update Tuples ================
+# myTuple = ('A', 'B', 'C', 'D', 'E', 'F', 'G')
+# print(myTuple)
+#
+# updatedTuple = list(myTuple)
+# updatedTuple.append('Haris')
+# print(updatedTuple)
+# myTuple = tuple(updatedTuple)
+# print(myTuple)
+
+# ==================== Unpack Tuples ================
+
+# tuple1 = (1, 2, 3, 4)  # packing tuple
+# (a, b, c, d) = tuple1  # unpacking
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+#
+# tuple1 = (1, 2, 3, 4, 5, 6, 7)  # packing tuple
+# tuple2 = (1, 2, 3, 4, 5, 6, 7)  # packing tuple
+# (a, b, c, *d) = tuple1  # unpacking
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+# ============= joining tuples ==============
+
+# tuple1 = (1, 2, 3, 4, 5, 6, 7)  # packing tuple
+# tuple2 = (1, 2, 3, 4, 5, 6, 7)  # packing tuple
+
+# print(tuple1+tuple2)
+
+# ============== loops in tuples ================
+# tuple1 = (1, 2, 3, 4, 5, 6, 7)
+# print(tuple1)
+# for items in tuple1:
+#     print(items)
+#
+# for x in range(len(tuple1)):
+#     print(x)
+#
+# index = 0
+# while index < len(tuple1):
+#     print(index)
+#     index = index + 1
+
+# b = 0
+# while b < len(tuple1):
+#     print(tuple1[b])
+#     b = b + 1
+
+# =================== Sets in Python ====================
+# there is no repitition of elements in sets
+# we cant use indexing in sets as sets are unordered
+Set_1 = {'Haris', 'Amin', 'Bilal'}
+Set_2 = {1, 2, 3}
+Set_3 = {9.99, 5.5, 66.01}
+Set_4 = {5j, 8j}
+Set_5 = {True, False}
+Set_6 = {'Haris', 1, 5.45, 9j}
+
+print(Set_1)
+print(Set_2)
+print(Set_3)
+print(Set_4)
+print(Set_5)
+print(Set_6)
+
+print(len(Set_1))
+print(type(Set_1))
+
+
+# =================== set_constructor ====================
+set_constructor = set()
+tuple_constructor = tuple()
+list_constructor = list()
+my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
+
+Set_to_List = list(my_Set)
+Set_to_tuple = tuple(my_Set)
+Set_to_set = set(my_Set)
+print(Set_to_List)
+Set_to_List.append('HTML')
+print(Set_to_List)
+
+print(Set_to_tuple)
+print(Set_to_set)
+# =================== Access items in set  ====================
+my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
+for items in my_Set:
+    print(items)
+
+print('C++' in my_Set)
+print('C#' not in my_Set)
+print('PHP' not in my_Set)
+
+# =================== adding items in set  ====================
+my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
+my_Set.add('CSS')
+print(my_Set)
+# =================== update items in set  ====================
+my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
+my_Set1 = {'SASS'}
+my_list1 = ['LESS']
+my_tuple1 = ('Bootstrap', 'ReactJs')
+
+my_Set.update(my_Set1)
+print(my_Set)
+
+my_Set.update(my_Set1)
+print(my_Set)
+
+my_Set.update(my_list1)
+print(my_Set)
+
+my_Set.update(my_tuple1)
+print(my_Set)
+
+my_Set.remove('LESS')
+print(my_Set)
+
+my_Set.discard('PHP')
+print(my_Set)
+
+my_Set.pop()
+print(my_Set)
+
+my_Set.clear()
+print(my_Set)
+
+del my_Set
+print(my_Set)
