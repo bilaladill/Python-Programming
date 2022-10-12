@@ -998,141 +998,155 @@
 # print(Set_to_tuple)
 # print(Set_to_set)
 # =================== Access items in set  ====================
-'''
-my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
-for items in my_Set:
-    print(items)
 
-print('C++' in my_Set)
-print('C#' not in my_Set)
-print('PHP' not in my_Set)
+# my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
+# for items in my_Set:
+#     print(items)
+#
+# print('C++' in my_Set)
+# print('C#' not in my_Set)
+# print('PHP' not in my_Set)
 
 
 # =================== adding items in set  ====================
-my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
-my_Set.add('CSS')
-print(my_Set)
+
+# my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
+# my_Set.add('CSS')
+# print(my_Set)
+
 # =================== update items in set  ====================
-my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
-my_Set1 = {'SASS'}
-my_list1 = ['LESS']
-my_tuple1 = ('Bootstrap', 'ReactJs')
 
-my_Set.update(my_Set1)
-print(my_Set)
+# my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
+# my_Set1 = {'SASS'}
+# my_list1 = ['LESS']
+# my_tuple1 = ('Bootstrap', 'ReactJs')
 
-my_Set.update(my_Set1)
-print(my_Set)
+# my_Set.update(my_Set1)
+# print(my_Set)
 
-my_Set.update(my_list1)
-print(my_Set)
+# my_Set.update(my_Set1)
+# print(my_Set)
 
-my_Set.update(my_tuple1)
-print(my_Set)
+# my_Set.update(my_list1)
+# print(my_Set)
 
-my_Set.remove('LESS')
-print(my_Set)
+# my_Set.update(my_tuple1)
+# print(my_Set)
 
-my_Set.discard('PHP')
-print(my_Set)
+# my_Set.remove('LESS')
+# print(my_Set)
 
-my_Set.pop()
-print(my_Set)
+# my_Set.discard('PHP')
+# print(my_Set)
 
-my_Set.clear()
-print(my_Set)
+# my_Set.pop()
+# print(my_Set)
 
-del my_Set
-print(my_Set)
-'''
+# my_Set.clear()
+# print(my_Set)
+
+# del my_Set
+# print(my_Set)
+
 # =================== Loops in Sets ==================
-my_Set1 = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
-print(my_Set1)
 
-for items in my_Set1:
-    print(items)
+# my_Set1 = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
+# print(my_Set1)
 
-for index in range(len(my_Set1)):
-    print(index)
+# for items in my_Set1:
+#     print(items)
 
-for items in range(len(my_Set1)):
-    print(my_Set1)
+# for index in range(len(my_Set1)):
+#     print(index)
+
+# for items in range(len(my_Set1)):
+#     print(my_Set1)
 
 # =================== Joining Sets ==================
-set1 = {1, 2, 3, 4, 5, 6}
-set2 = {11, 12, 13, 14, 15, 16}
+
+# set1 = {1, 2, 3, 4, 5, 6}
+# set2 = {11, 12, 13, 14, 15, 16}
+
 # =================== Set Methods ========================
-# ============== add()
-set1.add(55)
-print(set1)
 
-# ============== update()
-set1.update(set2)
-print(set1)
+# ============== add() =============
 
-# ============= copy()
-newSet = {55, 66, 77, 88, 99}
-copiedSet = newSet.copy()
-print(copiedSet)
-print(newSet)
-newCopiedSet = newSet
-print(newCopiedSet)
+# set1.add(55)
+# print(set1)
 
-# ============== difference()
-firstSet = {88, 99, 44, 55, 66, 22, 11}
-secondSet = {77, 33, 44, 66, 22, 11}
-diff = firstSet.difference(secondSet)
-diff2 = secondSet.difference(firstSet)
-print(diff)
-print(diff2)
+# ============== update() =============
 
-'''
-1. what will be the output of 
+# set1.update(set2)
+# print(set1)
 
-firstSet = {88, 99, 44, 55, 66, 22, 11}
-secondSet = {77, 33, 44, 66, 22, 11}
-diff = firstSet.difference(secondSet)
-print(diff)
+# ============= copy() ===========
 
-a) {66, 99, 55, 88, 77}
-b) {88, 99, 55}
-c) {33, 77}
-d) {99, 55, 88}
+# newSet = {55, 66, 77, 88, 99}
+# copiedSet = newSet.copy()
+# print(copiedSet)
+# print(newSet)
+# newCopiedSet = newSet
+# print(newCopiedSet)
 
-'''
-# ============== difference_update()
-firstSet = {88, 99, 44, 55, 66, 22, 11}
-secondSet = {77, 33, 44, 66, 22, 11}
-firstSet.difference_update(secondSet)
-print(firstSet)
+# ============== difference() ==============
 
-# ============== discard()
-'''first_set1 = {'Zain', 'Shan', 'Nabeel'}
-Second_set2 = {'Zain', 'Mairaj', 'Ghaffar'}
-first_set1.difference_update(Second_s)
-print(first_set1)'''
+# firstSet = {88, 99, 44, 55, 66, 22, 11}
+# secondSet = {77, 33, 44, 66, 22, 11}
+# diff = firstSet.difference(secondSet)
+# diff2 = secondSet.difference(firstSet)
+# print(diff)
+# print(diff2)
 
-newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
-newSet1.discard('Farhan')
-print(newSet1)
+# ======== (example of making mcqs for sir farhan) =========
 
-# ============== intersection()
+# 1. what will be the output of
+#
+# firstSet = {88, 99, 44, 55, 66, 22, 11}
+# secondSet = {77, 33, 44, 66, 22, 11}
+# diff = firstSet.difference(secondSet)
+# print(diff)
 
-newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
-newSet2 = {'Hamza', 'Usman', 'Amin', 'Haris'}
-myintersect = newSet1.intersection(newSet2)
-print(myintersect)
+# a) {66, 99, 55, 88, 77}
+# b) {88, 99, 55}
+# c) {33, 77}
+# d) {99, 55, 88}
 
-# ============== intersection_update()
 
-newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
-newSet2 = {'Hamza', 'Usman', 'Amin', 'Haris'}
-newSet1.intersection_update(newSet2)
-print(newSet1)
+# ============== difference_update() =============
 
-# ============== isdisjoint()
+# firstSet = {88, 99, 44, 55, 66, 22, 11}
+# secondSet = {77, 33, 44, 66, 22, 11}
+# firstSet.difference_update(secondSet)
+# print(firstSet)
 
-newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
-newSet2 = {'Hamza', 'Usman', 'Amin', 'Haris'}
+# ============== discard() =============
 
-print(newSet1.isdisjoint(newSet2))
+# first_set1 = {'Zain', 'Shan', 'Nabeel'}
+# Second_set2 = {'Zain', 'Mairaj', 'Ghaffar'}
+# first_set1.difference_update(Second_s)
+# print(first_set1)
+
+# newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
+# newSet1.discard('Farhan')
+# print(newSet1)
+
+# ============== intersection() ==============
+
+# newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
+# newSet2 = {'Hamza', 'Usman', 'Amin', 'Haris'}
+# myintersect = newSet1.intersection(newSet2)
+# print(myintersect)
+
+# ============== intersection_update() =============
+
+# newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
+# newSet2 = {'Hamza', 'Usman', 'Amin', 'Haris'}
+# newSet1.intersection_update(newSet2)
+# print(newSet1)
+
+# ============== isdisjoint() ===============
+
+# newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
+# newSet2 = {'Hamza', 'Usman', 'Amin', 'Haris'}
+
+# print(newSet1.isdisjoint(newSet2))
