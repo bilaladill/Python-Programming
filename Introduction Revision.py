@@ -964,40 +964,41 @@
 # =================== Sets in Python ====================
 # there is no repitition of elements in sets
 # we cant use indexing in sets as sets are unordered
-Set_1 = {'Haris', 'Amin', 'Bilal'}
-Set_2 = {1, 2, 3}
-Set_3 = {9.99, 5.5, 66.01}
-Set_4 = {5j, 8j}
-Set_5 = {True, False}
-Set_6 = {'Haris', 1, 5.45, 9j}
+# Set_1 = {'Haris', 'Amin', 'Bilal'}
+# Set_2 = {1, 2, 3}
+# Set_3 = {9.99, 5.5, 66.01}
+# Set_4 = {5j, 8j}
+# Set_5 = {True, False}
+# Set_6 = {'Haris', 1, 5.45, 9j}
 
-print(Set_1)
-print(Set_2)
-print(Set_3)
-print(Set_4)
-print(Set_5)
-print(Set_6)
+# print(Set_1)
+# print(Set_2)
+# print(Set_3)
+# print(Set_4)
+# print(Set_5)
+# print(Set_6)
 
-print(len(Set_1))
-print(type(Set_1))
+# print(len(Set_1))
+# print(type(Set_1))
 
 
 # =================== set_constructor ====================
-set_constructor = set()
-tuple_constructor = tuple()
-list_constructor = list()
-my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
-
-Set_to_List = list(my_Set)
-Set_to_tuple = tuple(my_Set)
-Set_to_set = set(my_Set)
-print(Set_to_List)
-Set_to_List.append('HTML')
-print(Set_to_List)
-
-print(Set_to_tuple)
-print(Set_to_set)
+# set_constructor = set()
+# tuple_constructor = tuple()
+# list_constructor = list()
+# my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
+#
+# Set_to_List = list(my_Set)
+# Set_to_tuple = tuple(my_Set)
+# Set_to_set = set(my_Set)
+# print(Set_to_List)
+# Set_to_List.append('HTML')
+# print(Set_to_List)
+#
+# print(Set_to_tuple)
+# print(Set_to_set)
 # =================== Access items in set  ====================
+'''
 my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
 for items in my_Set:
     print(items)
@@ -1005,6 +1006,7 @@ for items in my_Set:
 print('C++' in my_Set)
 print('C#' not in my_Set)
 print('PHP' not in my_Set)
+
 
 # =================== adding items in set  ====================
 my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
@@ -1042,3 +1044,95 @@ print(my_Set)
 
 del my_Set
 print(my_Set)
+'''
+# =================== Loops in Sets ==================
+my_Set1 = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
+print(my_Set1)
+
+for items in my_Set1:
+    print(items)
+
+for index in range(len(my_Set1)):
+    print(index)
+
+for items in range(len(my_Set1)):
+    print(my_Set1)
+
+# =================== Joining Sets ==================
+set1 = {1, 2, 3, 4, 5, 6}
+set2 = {11, 12, 13, 14, 15, 16}
+# =================== Set Methods ========================
+# ============== add()
+set1.add(55)
+print(set1)
+
+# ============== update()
+set1.update(set2)
+print(set1)
+
+# ============= copy()
+newSet = {55, 66, 77, 88, 99}
+copiedSet = newSet.copy()
+print(copiedSet)
+print(newSet)
+newCopiedSet = newSet
+print(newCopiedSet)
+
+# ============== difference()
+firstSet = {88, 99, 44, 55, 66, 22, 11}
+secondSet = {77, 33, 44, 66, 22, 11}
+diff = firstSet.difference(secondSet)
+diff2 = secondSet.difference(firstSet)
+print(diff)
+print(diff2)
+
+'''
+1. what will be the output of 
+
+firstSet = {88, 99, 44, 55, 66, 22, 11}
+secondSet = {77, 33, 44, 66, 22, 11}
+diff = firstSet.difference(secondSet)
+print(diff)
+
+a) {66, 99, 55, 88, 77}
+b) {88, 99, 55}
+c) {33, 77}
+d) {99, 55, 88}
+
+'''
+# ============== difference_update()
+firstSet = {88, 99, 44, 55, 66, 22, 11}
+secondSet = {77, 33, 44, 66, 22, 11}
+firstSet.difference_update(secondSet)
+print(firstSet)
+
+# ============== discard()
+'''first_set1 = {'Zain', 'Shan', 'Nabeel'}
+Second_set2 = {'Zain', 'Mairaj', 'Ghaffar'}
+first_set1.difference_update(Second_s)
+print(first_set1)'''
+
+newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
+newSet1.discard('Farhan')
+print(newSet1)
+
+# ============== intersection()
+
+newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
+newSet2 = {'Hamza', 'Usman', 'Amin', 'Haris'}
+myintersect = newSet1.intersection(newSet2)
+print(myintersect)
+
+# ============== intersection_update()
+
+newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
+newSet2 = {'Hamza', 'Usman', 'Amin', 'Haris'}
+newSet1.intersection_update(newSet2)
+print(newSet1)
+
+# ============== isdisjoint()
+
+newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
+newSet2 = {'Hamza', 'Usman', 'Amin', 'Haris'}
+
+print(newSet1.isdisjoint(newSet2))
