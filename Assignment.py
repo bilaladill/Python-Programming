@@ -852,3 +852,137 @@
 # print(listD)
 
 # ==================================== tuples in python ============================================
+
+# list = ['haris', 'amin', ' jhanzaib']  # muthable (bcz they are changeable)
+# tuple = ('bilal', 'farhan', 'shoaib')  # immutable (bcz they cannot be changed)
+
+# print(tuple)
+# print(len(tuple))
+# print(type(tuple))
+
+# tuple1 = ('bilal', 'amin', 'farhan')
+# tuple2 = (22, 33, 44, 55, 66, 77)
+# tuple3 = (1.2, 7.8, 9.3, 5.5)
+# tuple4 = (5j, 9j, 10j, 3j)
+# tuple5 = (True, False)
+# tuple6 = ('bilal', 22, 33, 5j, 8j, 2.2, True)
+
+# students = ('farhan', 'talha', 'khalid')
+# classes = ('9th')
+# name = str(input('enter your name: '))
+# print(name)
+
+# ==================== Tuple Formatting =======================
+
+# tuple1 = ('bilal', 'amin', 'farhan')
+# tuple2 = (22, 33, 44, 55, 66, 77)
+# tuple3 = (1.2, 7.8, 9.3, 5.5)
+# tuple4 = (5j, 9j, 10j, 3j)
+# tuple5 = (True, False)
+
+# print(tuple1+tuple2+tuple3+tuple4+tuple5)  # joining tuples
+
+# print(f'this is tuple number 1: {tuple1}this is tuple number 2: {tuple2}this is tuple number 3: {tuple3}this is tuple number 4: {tuple4}this is tuple number 5: {tuple5}')
+
+# print(f'this is tuple number 1: {tuple1}\nthis is tuple number 2: {tuple2}\nthis is tuple number 3: {tuple3}\nthis is tuple number 4: {tuple4}\nthis is tuple number 5: {tuple5}')
+
+# print('this is tuple number 1: %s, this is tuple number 2: %s, this is tuple number 3: %s, this is tuple number 4: %s, this is tuple number 5: %s' %(tuple1, tuple2, tuple3, tuple4, tuple5))
+
+# print('this is tuple 1: {}, this is tuple 2: {}, this is tuple 3: {}, this is tuple 4: {}, this is tuple 5: {}'.format(tuple1, tuple2, tuple3, tuple4, tuple5))
+
+# print('the main tupple is: {}'.format(tuple1+tuple2+tuple3+tuple4+tuple5))
+
+# ======================= Tuple Constructor ======================
+
+# tuple = tuple(('syed', 'mohammad', 'farhan', 'qadir', 'shah', 'bukhari'))
+# print(tuple)
+
+# ======================= Accessing Tuples ========================
+
+#           0        1       2       3   4   5
+#           0       -5      -4      -3  -2  -1
+# myTuple = ('haris', 'amin', 'bilal', 29, 88, 5j)
+
+# print(myTuple)
+# print(myTuple[2])
+# print(myTuple[0])
+# print(myTuple[-5])
+# print(myTuple[-1])
+# print(myTuple[:])
+# print(myTuple[4:])
+# print(myTuple[:3])
+# print(myTuple[2:4])
+# print(myTuple[-4:-1])
+# print(myTuple[-5:])
+# print(myTuple[:-1])
+# print(myTuple[0:0])
+
+# myTuple = ('haris', 'amin', 'bilal', 29, 88, 5j)
+
+# myInput = input('what do you want to find in myTuple? ')
+# if myInput in myTuple:
+#     print('Yahoo! This item exist in myTuple')
+
+# else:
+#     print('Sorry! This item doesnot exist in myTuple')
+
+# print(myTuple.index('amin'), myTuple[-4])
+
+# ================= Update Tuples ==================
+
+# myTuple = ('haris', 'amin', 'bilal', 29, 88, 5j)
+# print(myTuple)
+
+# updatedTuple = list(myTuple)
+# updatedTuple.append('rizwan')
+# print(updatedTuple)
+# myTuple = tuple(updatedTuple)
+# print(myTuple)
+
+# ================= Unpack Tuples ==================
+
+# tuple1 = (22, 11, 44, 99)  # packing tuples
+# (a, b, c, d) = tuple1   # unpacking tuples
+
+# print(c)
+# print(a)
+# print(d)
+# print(b)
+
+# tuple2 = (81, 90, 48, 87, 32, 29)  # packing tuple
+# (a, b, c, *d) = tuple2  # unpacking tuple
+
+# print(a)
+# print(d)
+# print(c)
+
+# =============== Joining Tuples ================
+
+# tuple1 = (22, 11, 44, 99)  # packing tuples
+# tuple2 = (81, 90, 48, 87, 32, 29)  # packing tuple
+
+# print(tuple1+tuple2)
+
+# ============== Loops in tuples ================
+
+# tuple1 = (1, 2, 3, 4, 5, 6)
+
+# print(tuple1)
+
+# for items in tuple1:
+#     print(items)
+
+# for x in range(len(tuple1)):
+#     print(x)
+
+# index = 0
+# while index < len(tuple1):
+#     print(index)
+#     index = index + 1
+
+# b = 0
+# while b < len(tuple1):
+#     print(tuple1[b])
+#     b = b + 1
+
+# ========================= sets in python ===============================

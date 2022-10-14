@@ -884,6 +884,7 @@
 #           0    1    2    3    4    5    6
 #           0   -6   -5   -4   -3   -2   -1
 # myTuple = ('A', 'B', 'C', 'D', 'E', 'F', 'G')
+
 # print(myTuple)
 # print(myTuple[0])
 # print(myTuple[5])
@@ -899,7 +900,7 @@
 # print(myTuple[:-5])
 # print(myTuple[0:0])
 # print(myTuple[-6:-2])
-#
+
 # myInput = input('What Do You Want To Find In myTuple? ')
 # if myInput in myTuple:
 #     print('This Item Exist in myTuple')
@@ -910,9 +911,10 @@
 # print(myTuple.index('B'), myTuple[1])
 
 # ==================== Update Tuples ================
+
 # myTuple = ('A', 'B', 'C', 'D', 'E', 'F', 'G')
 # print(myTuple)
-#
+
 # updatedTuple = list(myTuple)
 # updatedTuple.append('Haris')
 # print(updatedTuple)
@@ -935,6 +937,7 @@
 # print(b)
 # print(c)
 # print(d)
+
 # ============= joining tuples ==============
 
 # tuple1 = (1, 2, 3, 4, 5, 6, 7)  # packing tuple
@@ -943,6 +946,7 @@
 # print(tuple1+tuple2)
 
 # ============== loops in tuples ================
+
 # tuple1 = (1, 2, 3, 4, 5, 6, 7)
 # print(tuple1)
 # for items in tuple1:
@@ -962,6 +966,7 @@
 #     b = b + 1
 
 # =================== Sets in Python ====================
+
 # there is no repitition of elements in sets
 # we cant use indexing in sets as sets are unordered
 # Set_1 = {'Haris', 'Amin', 'Bilal'}
