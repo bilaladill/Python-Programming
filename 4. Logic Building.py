@@ -8,7 +8,7 @@
 # less or equal    <=
 
 
-# Amin
+# Made By Amin
 # d = int(input('enter number d: '))
 # y = int(input('enter number y: '))
 #
@@ -21,7 +21,7 @@
 # else:
 #     print('both are equal')
 
-# Bilal
+# Made By Bilal
 
 # yourFood = str(input('Enter the food you want to know in menu card: '))
 # PakistaniMenu = ['nihari', 'biryani', 'qarhai', 'kunna']
