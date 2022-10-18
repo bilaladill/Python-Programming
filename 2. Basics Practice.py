@@ -1078,7 +1078,7 @@
 
 # =============== loops in sets ================
 
-set = {'farhan', 'baqar', 'shani', 'shoaib'}
+# set = {'farhan', 'baqar', 'shani', 'shoaib'}
 # print(set)
 
 # for items in set:
@@ -1087,5 +1087,31 @@ set = {'farhan', 'baqar', 'shani', 'shoaib'}
 # for index in range(len(set)):
 #     print(index)
 
-for items in range(len(set)):
-    print(items)
+# for items in range(len(set)):
+#     print(set)
+
+# =============== joining sets ==================
+
+# set1 = {'bilal', 'adil', 'haris'}
+# set2 = {1, 2, 3, 4, 5, 6, 7}
+
+# set3 = set1.union(set2)
+# print(set3)
+
+# =============================== set methods ================================
+
+# ============== add ================
+
+# set = {'bilal', 'adil', 'haris'}
+# set.add('amin')
+# print(set)
+
+# ============== update ================
+
+# set1 = {'bilal', 'adil', 'haris'}
+# set2 = {1, 2, 3, 4, 5, 6, 7}
+
+# set1.update(set2)
+# print(set1)
+
+# =============== copy ==================
