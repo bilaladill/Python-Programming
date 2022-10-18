@@ -985,3 +985,69 @@
 #     b = b + 1
 
 # ========================= sets in python ===============================
+
+# there is no repitition of elements in sets
+# we cant use indexing in sets as sets are unordered
+
+# set1 = {'bilal', 'farhan', 'subhan'}
+# set2 = {22, 44, 66}
+# set3 = {1.1, 4.4, 9.9}
+# set4 = {3j, 9j, 2j}
+# set5 = {True, False}
+# set6 = {'bilal', 22, 1.1, 9j, False}
+
+# print(set1)
+# print(set2)
+# print(set3)
+# print(set4)
+# print(set5)
+# print(set6)
+
+# print(len(set6))
+# print(type(set6))
+
+# =============== set constructor =================
+
+# set_constructor = set()
+# tuple_constructor = tuple()
+# list_constructor = ()
+
+# my_set = {'farhan', 'subhan', 'python', 'javascript'}
+
+# set_to_list = list(my_set)
+# print(set_to_list)
+
+# set_to_tuple = tuple(my_set)
+# print(set_to_tuple)
+
+# set_to_set = set(my_set)
+# print(set_to_set)
+
+# set_to_list.append('buddhu')
+# print(set_to_list)
+
+# ============== access items in list ================
+
+# my_set = {'farhan', 'subhan', 'python', 'javascript'}
+
+# for items in my_set:
+#     print(items)
+
+# print('bilal' in my_set)
+# print('javascript' in my_set)
+# print('subhan' not in my_set)
+# print('33' not in my_set)
+
+# ============= adding items in set =================
+
+# my_set = {'farhan', 'subhan', 'python', 'javascript'}
+
+# my_set.add('bilal')
+# print(my_set)
+
+# ============= update items in set ===============
+
+set = {'farhan', 'baqar', 'shani', 'shoaib'}
+set1 = {'python'}
+list = ['C++', 'javascript']
+tuple = ('web developer', 'java')

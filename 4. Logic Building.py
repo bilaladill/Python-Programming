@@ -68,6 +68,7 @@
 # if person == 'Pakistani' or person == 'pakistani':
 #     print('Assalam Alaikum!!')
 
+
 # person = str(input('Your Nationality? '))
 # if person == 'Arabic' or person == 'arabic':
 #     print('Marhaba Ya Habibi!!')
@@ -80,6 +81,7 @@
 
 # else:
 #     print('we are not available in your country')
+
 
 # name = str(input('Enter Your Name: '))
 # age = int(input('Enter your Age: '))
@@ -98,6 +100,7 @@
 # else:
 #     print(f'Ab to {name} hi bacha hai')
 
+
 # a = float(input('Enter number a: '))
 # b = float(input('Enter number b: '))
 # c = float(input('Enter number c: '))
@@ -112,12 +115,14 @@
 #     maximum = c
 # print('The Maximum value is: ' + str(maximum))
 
+
 # cars = ['audi', 'bmw', 'subaru', 'toyota']
 # for car in cars:
 #     if car == 'corolla':
 #         print(car.lower())
 #     else:
 #         print(car.title())
+
 
 # banned_users = ['sami', 'sani', 'ali']
 # user = input('entr name: ')

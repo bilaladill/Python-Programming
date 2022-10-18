@@ -993,7 +993,7 @@
 # tuple_constructor = tuple()
 # list_constructor = list()
 # my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
-#
+
 # Set_to_List = list(my_Set)
 # Set_to_tuple = tuple(my_Set)
 # Set_to_set = set(my_Set)
@@ -1008,7 +1008,7 @@
 # my_Set = {'Python', 'C++', 'Java', 'PHP', 'Javascript'}
 # for items in my_Set:
 #     print(items)
-#
+
 # print('C++' in my_Set)
 # print('C#' not in my_Set)
 # print('PHP' not in my_Set)
@@ -1026,9 +1026,6 @@
 # my_Set1 = {'SASS'}
 # my_list1 = ['LESS']
 # my_tuple1 = ('Bootstrap', 'ReactJs')
-
-# my_Set.update(my_Set1)
-# print(my_Set)
 
 # my_Set.update(my_Set1)
 # print(my_Set)
