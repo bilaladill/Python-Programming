@@ -130,3 +130,89 @@
 #     print(f"{user.title()}, you can post a response if you wish.")
 # else:
 #     print(f"{user.title()}, you are not allowed to post any response.")
+
+# ======================== While Loop =============================
+
+# number = 0
+# while number < 10:
+#     print(number)
+#     number = number + 1
+
+
+# number = 0
+# while number < 10:
+#     print(number)
+#     if number == 6:
+#         break
+#     number = number + 1
+
+
+# number = 0
+# while number < 10:
+#     number = number + 1
+#     if number == 6:
+#         continue
+#     print(number)
+
+
+# number = 0
+# while number < 10:
+#     print(number)
+#     number = number + 1
+# else:
+#     print('number limit reached!!')
+
+# ====================== For Loop ===============================
+
+# VLoggers = ['Ducky Bhai', 'Mooro', 'Irfan Junejo', 'Maaz Safder']
+# for VLogger in VLoggers:
+#     print(VLogger)
+
+
+# VLoggers = ['Ducky Bhai', 'Mooro', 'Irfan Junejo', 'Maaz Safder']
+# for VLogger in VLoggers:
+#     print(VLogger.upper())
+
+
+# myString = 'BilalAdil'
+# for characters in myString:
+#     print(characters)
+
+# VLoggers = ['Ducky Bhai', 'Mooro', 'Irfan Junejo', 'Maaz Safder']
+# for VLogger in VLoggers:
+#     print(VLogger)
+#     if VLogger == 'Mooro':
+#         break
+
+
+# fruits = ['apple', 'banana', 'peach']
+# for x in fruits:
+#     if x == 'banana':
+#         continue
+#     print(x)
+
+# for x in range(6):
+#     print(x)
+
+
+# for x in range(6):
+#     print(x)
+# else:
+#     print('finally finished')
+
+
+# for x in range(6):
+#     if x == 3:
+#         break
+#     print(x)
+# else:
+#     print('finally finished')
+
+# cars = ['BMW', 'Audi', 'Ferari']
+# bus_Services = ['Niazi', 'Faisal', 'Alsaif']
+# for car in cars:
+#     for bus in bus_Services:
+#         print(car, bus)
+
+# for x in [0, 1, 2]:
+#     pass

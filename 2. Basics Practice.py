@@ -1047,7 +1047,45 @@
 
 # ============= update items in set ===============
 
+# set = {'farhan', 'baqar', 'shani', 'shoaib'}
+# set1 = {'python'}
+# list = ['C++', 'javascript']
+# tuple = ('web developer', 'java')
+
+# set.update(set1)
+# print(set)
+#
+# set.update(list)
+# print(set)
+#
+# set.update(tuple)
+# print(set)
+
+# list.remove('C++')
+# print(list)
+
+# set.discard('shani')
+# print(set)
+
+# set.pop()
+# print(set)
+
+# list.clear()
+# print(list)
+
+# del list
+# print(list)
+
+# =============== loops in sets ================
+
 set = {'farhan', 'baqar', 'shani', 'shoaib'}
-set1 = {'python'}
-list = ['C++', 'javascript']
-tuple = ('web developer', 'java')
+# print(set)
+
+# for items in set:
+#     print(items)
+
+# for index in range(len(set)):
+#     print(index)
+
+for items in range(len(set)):
+    print(items)
