@@ -9,7 +9,7 @@
 # percentage = math.floor((obtained_marks/total_marks)*100)
 # print(f'Your name is {name} and your age is {age} years. Your id is {id}. Your total marks were {total_mrks} and you have obtained {obtained_marks} marks. Which becomes {percentage}%.')
 
-# == == == == == == == == == == == == == == == List == == == == == == == == == == == == == == == == == == ==
+# ============================== List ======================================
 
 
 # my_list = ['Amin', 'Farhan', 'Haris', 'Bilal']

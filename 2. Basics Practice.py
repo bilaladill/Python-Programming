@@ -1,4 +1,6 @@
-# ============================================== STRINGS ==================================================
+# =====================================  PYTHON BASICS PRACTICE START  ==========================================
+
+# ======================================= STRINGS =============================================
 
 # ===============Input===============
 # bi
@@ -850,7 +852,7 @@
 # listD = [items for items in listC]
 # print(listD)
 
-# ==================================== tuples in python ============================================
+# ============================ tuples in python ====================================
 
 # list = ['haris', 'amin', ' jhanzaib']  # muthable (bcz they are changeable)
 # tuple = ('bilal', 'farhan', 'shoaib')  # immutable (bcz they cannot be changed)
@@ -1115,3 +1117,69 @@
 # print(set1)
 
 # =============== copy ==================
+
+# newSet = {'assu', 'panju', 'haar', 'kabutar', 'doli'}
+# copiedSet1 = newSet.copy()
+# print(copiedSet1)
+
+# copiedSet2 = newSet
+# print(copiedSet2)
+
+# =============== difference ================
+
+# set1 = {99, 22, 44, 66, 88}
+# set2 = {11, 77, 33, 88, 44}
+
+# diff_1 = set1.difference(set2)
+# print(diff_1)
+
+# diff_2 = set2.difference(set1)
+# print(diff_2)
+
+# ============= difference update ==============
+
+# set1 = {99, 22, 44, 66, 88}
+# set2 = {11, 77, 33, 88, 44}
+
+# set1.difference_update(set2)
+# print(set1)
+
+# ================ discard ===================
+
+# set = {'bilal', 'adil', 'haris', 'amin', 'farhan'}
+
+# set.discard('bilal')
+# print(set)
+
+# set.discard('amin')
+# print(set)
+
+# set.discard('bilal')
+# set.discard('amin')
+# print(set)
+
+# ================ intersection ================
+
+# set1 = {'farhan', 'baqar', 'shani', 'shoaib'}
+# set2 = {'farhan', 'subhan', 'shoaib', 'javascript'}
+
+# intersect = set1.intersection(set2)
+# print(intersect)
+
+# ============== intersection update ==============
+
+# set1 = {'farhan', 'baqar', 'shani', 'shoaib'}
+# set2 = {'farhan', 'subhan', 'shoaib', 'javascript'}
+
+# set1.intersection_update(set2)
+# print(set1)
+
+# ============== isdisjoint ================
+
+# set1 = {'farhan', 'baqar', 'shani', 'shoaib'}
+# set2 = {'farhan', 'subhan', 'shoaib', 'javascript'}
+
+# print(set1.isdisjoint(set2))
+
+
+# ===================================== PYTHON BASICS PRACTICE FINISHED ========================================

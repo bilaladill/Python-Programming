@@ -1070,6 +1070,9 @@
 # set1 = {1, 2, 3, 4, 5, 6}
 # set2 = {11, 12, 13, 14, 15, 16}
 
+# set3 = set1.union(set2)
+# print(set3)
+
 # =================== Set Methods ========================
 
 # ============== add() =============
@@ -1100,21 +1103,6 @@
 # print(diff)
 # print(diff2)
 
-# ======== (example of making mcqs for sir farhan) =========
-
-# 1. what will be the output of
-#
-# firstSet = {88, 99, 44, 55, 66, 22, 11}
-# secondSet = {77, 33, 44, 66, 22, 11}
-# diff = firstSet.difference(secondSet)
-# print(diff)
-
-# a) {66, 99, 55, 88, 77}
-# b) {88, 99, 55}
-# c) {33, 77}
-# d) {99, 55, 88}
-
-
 # ============== difference_update() =============
 
 # firstSet = {88, 99, 44, 55, 66, 22, 11}
@@ -1123,11 +1111,6 @@
 # print(firstSet)
 
 # ============== discard() =============
-
-# first_set1 = {'Zain', 'Shan', 'Nabeel'}
-# Second_set2 = {'Zain', 'Mairaj', 'Ghaffar'}
-# first_set1.difference_update(Second_s)
-# print(first_set1)
 
 # newSet1 = {'Haris', 'Amin', 'Bilal', 'Farhan'}
 # newSet1.discard('Farhan')
