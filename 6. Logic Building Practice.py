@@ -11,32 +11,220 @@
 
 # =============== If, Elif, Else =================
 
-import math
+# -------------------
 
-name = str(input('Enter your name: '))
-age = int(input('Enter your age: '))
-rank = int(input('Enter your class: '))
-section = str(input('Enter your section: '))
-subject = str(input('Enter learning subject: '))
-total_marks = int(input('Enter total marks: '))
-obtained_marks = int(input('Enter obtained marks: '))
-percentage = math.floor((obtained_marks/total_marks)*100)
-# grade = str('A', 'A+', 'B', 'C', )
+# import math
+
+# name = str(input('Enter your name: '))
+# age = int(input('Enter your age: '))
+# rank = str(input('Enter your class: '))
+# section = str(input('Enter your section: '))
+# subject = str(input('Enter learning subject: '))
+# total_marks = int(input('Enter total marks: '))
+# obtained_marks = int(input('Enter obtained marks: '))
+# percentage = math.floor((obtained_marks/total_marks)*100)
+
+# if percentage >= 80 and percentage <= 100:
+#     print('Grade: A+')
+
+# elif percentage >= 70 and percentage < 80:
+#     print('Grade: A')
+
+# elif percentage >= 60 and percentage < 70:
+#     print('Grade : B')
+
+# elif percentage >= 50 and percentage < 60:
+#     print('Grade: C')
+
+# else:
+#     print('Grade: Failed')
+
+# print(f'--- THE DECENCY CODIFIED MARKETING ---\n \n      Name: {name}\n      Age: {age}\n      Class: {rank}{section}\n      Subject: {subject}\n      Obtained Marks: {obtained_marks}\n      Total Marks: {total_marks}\n      Percentage: {percentage}%\n \n--- RESULT FROM THE DECENCY CODIFIED MARKETING - --')
+
+# -------------------
+
+# person = str(input('Your Nationality? '))
+# if person == 'Pakistani' or person == 'pakistani':
+#     print('To kesy hain ap Log!!')
+# else:
+#     print('Hum Ap ko nahi Janty!!!')
+
+# -------------------
+
+# person = str(input('Your Nationality? '))
+# if person == 'Arabic' or person == 'arabic':
+#     print('Marhaba Ya Habibi!!')
+# if person == 'Pakistani' or person == 'pakistani':
+#     print('Assalam Alaikum!!')
+
+# -------------------
+
+# person = str(input('Your Nationality? '))
+# if person == 'Arabic' or person == 'arabic':
+#     print('Marhaba Ya Habibi!!')
+# if person == 'Pakistani' or person == 'pakistani':
+#     print('Assalam Alaikum!!')
+
+# -------------------
+
+# person = str(input('Your Nationality? '))
+# if person == 'Arabic' or person == 'arabic':
+#     print('Marhaba Ya Habibi!!')
+
+# elif person == 'Pakistani' or person == 'pakistani':
+#     print('Assalam Alaikum!!')
+
+# elif person == 'Indian' or person == 'indian':
+#     print('India will be defeated by Pakistan Soon, In Sha Allah')
+
+# else:
+#     print('we are not available in your country')
+
+# -------------------
+
+# name = str(input('Enter Your Name: '))
+# age = int(input('Enter your Age: '))
+# if age < 0:
+#     print('This is not true, don\'t try to be Over Smart')
+# elif age <= 10:
+#     print('You are too small to be a programmer')
+# elif age == 13:
+#     print('You are cute %s' % (name))
+# elif age == 17:
+#     print('Yeah Boy, This is {}'.format(name))
+# elif age == 19:
+#     print(f'Masoom {name}')
+# elif age > 30:
+#     print(f'Budhy {name}')
+# else:
+#     print(f'Ab to {name} hi bacha hai')
+
+# -------------------
+
+# a = float(input('Enter number a: '))
+# b = float(input('Enter number b: '))
+# c = float(input('Enter number c: '))
+# maximum = max((a, b, c))
+# print('The Maximum value is: ' + str(maximum))
+
+# if a > b and a > c:
+#     maximum = a
+# elif b > a and b > c:
+#     maximum = b
+# else:
+#     maximum = c
+# print('The Maximum value is: ' + str(maximum))
+
+# -------------------
+
+# cars = ['audi', 'bmw', 'subaru', 'toyota']
+# for car in cars:
+#     if car == 'corolla':
+#         print(car.lower())
+#     else:
+#         print(car.title())
+
+# -------------------
+
+# banned_users = ['sami', 'sani', 'ali']
+# user = input('entr name: ')
+# if user not in banned_users:
+#     print(f"{user.title()}, you can post a response if you wish.")
+# else:
+#     print(f"{user.title()}, you are not allowed to post any response.")
+
+# ======================== While Loop =============================
+
+# number = 0
+# while number < 10:
+#     print(number)
+#     number = number + 1
+
+# ----------------------
+
+# number = 0
+# while number < 10:
+#     print(number)
+#     if number == 6:
+#         break
+#     number = number + 1
+
+# -----------------------------
+
+# number = 0
+# while number < 10:
+#     number = number + 1
+#     if number == 6:
+#         continue
+#     print(number)
+
+# ----------------------
+
+# number = 0
+# while number < 10:
+#     print(number)
+#     number = number + 1
+# else:
+#     print('number limit reached!!')
+
+# ====================== For Loop ===============================
+
+# VLoggers = ['Ducky Bhai', 'Mooro', 'Irfan Junejo', 'Maaz Safder']
+# for VLogger in VLoggers:
+#     print(VLogger)
+
+# --------------------------
+
+# VLoggers = ['Ducky Bhai', 'Mooro', 'Irfan Junejo', 'Maaz Safder']
+# for VLogger in VLoggers:
+#     print(VLogger.upper())
+
+# --------------------------
+
+# myString = 'BilalAdil'
+# for characters in myString:
+#     print(characters)
+
+# -------------------------
+
+# VLoggers = ['Ducky Bhai', 'Mooro', 'Irfan Junejo', 'Maaz Safder']
+# for VLogger in VLoggers:
+#     print(VLogger)
+#     if VLogger == 'Mooro':
+#         break
+
+# ------------------------
+
+# fruits = ['apple', 'banana', 'peach']
+# for x in fruits:
+#     if x == 'banana':
+#         continue
+#     print(x)
+
+# for x in range(6):
+#     print(x)
 
 
-if percentage >= 80 and percentage <= 100:
-    print('Grade: A+')
-#
-elif percentage >= 70 and percentage < 80:
-    print('Grade: A')
-#
-elif percentage >= 60 and percentage < 70:
-    print('Grade : B')
-#
-elif percentage >= 50 and percentage < 60:
-    print('Grade: C')
-#
-else:
-    print('Grade: Failed')
+# for x in range(6):
+#     print(x)
+# else:
+#     print('finally finished')
 
-print(f'--- THE DECENCY CODIFIED MARKETING ---\nName: {name}\nAge: {age}\nClass: {rank}\nSection: {section}\nSubject: {subject}\nObtained Marks: {obtained_marks}\nTotal Marks: {total_marks}\nPercentage: {percentage}%\n--- RESULT FROM THE DECENCY CODIFIED MARKETING ---')
+
+# for x in range(6):
+#     if x == 3:
+#         break
+#     print(x)
+# else:
+#     print('finally finished')
+
+# --------------------------
+
+# cars = ['BMW', 'Audi', 'Ferari']
+# bus_Services = ['Niazi', 'Faisal', 'Alsaif']
+# for car in cars:
+#     for bus in bus_Services:
+#         print(car, bus)
+
+# for x in [0, 1, 2]:
+#     pass
