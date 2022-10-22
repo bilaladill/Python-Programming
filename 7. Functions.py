@@ -52,8 +52,8 @@
 
 # name()
 # name('Amin', 'Ahmed', 'Zuberi', 'Professional of Cyber Security')
-# # Arbitrary Arguments, *args (tuple)
 
+# =============== Arbitrary Arguments, *args (tuple) ==================
 
 # def ArbArg(*classmates):
 #     print('The Smartest Boys are ' + classmates[0] + ' & ' + classmates[0])
@@ -157,5 +157,3 @@
 # user_profile = profileOfAmin('Amin', 'Ahmed',
 #                              My_class='eight', My_school='happy home', location='gulshan', field='python')
 # print(user_profile)
-
-# sir kiya hum function k argument mai integers use nahi karsakhte? functions practice line 20

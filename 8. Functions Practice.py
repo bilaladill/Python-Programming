@@ -20,10 +20,10 @@
 # ===================== Arguments In Function ========================
 
 # def func(name, age):
-#     print('Congratulations ' + name + '! You are ' + age + ' years old now!')
+#     print('Congratulations ' + name + '! You are ' + str(age) + ' years old now!')
 
 
-# func('Bilal', 'nineteen')
+# func('Bilal', 19)
 
 # ===================
 
@@ -72,3 +72,67 @@
 # name()
 
 # =========== Arbitrary Arguments =============
+
+# def ArbArg(*classmates):
+#     print('The handsome boys are ' + classmates[0] + ' and ' + classmates[1] + '.')
+
+
+# ArbArg('farhan', 'bilal', 'amin', 'nabeel')
+
+# ==================
+
+# def ArbArg(*classmates):
+#     print('The handsome boys are ' +
+#           classmates[3] + ' and ' + classmates[2] + '.')
+
+
+# ArbArg('farhan', 'bilal', 'amin', 'nabeel')
+
+# ================= Arbitrary Keyword Arguments, **kwords (dictionary)
+
+# def myCars(**cars):
+#     print('My first car was ' + cars['fcar'])
+#     print('My second car was ' + cars['scar'])
+#     print('My third car was ' + cars['tcar']+'.')
+#     print('My current car is ' + cars['ccar']+'.')
+
+
+# myCars(fcar='Audi', scar='Ferrari', tcar='Mercedes', ccar='Tesla')
+
+# =============== Functions With List ===============
+
+# cars = ['audi', 'sonata', 'prado', 'mark x']
+
+
+# def myCars(Cars):
+#     for car in Cars:
+#         print(car)
+
+
+# myCars(cars)
+
+# =============== Return ==================
+
+# def func(arg):
+#     return print(3*arg)
+
+
+# func('Bilal ')
+
+# ================
+
+# def func(arg):
+#     return print(3*arg)
+
+
+# func('Bilal\n')
+
+# ================
+
+# def func(arg):
+#     return print(3*arg)
+
+
+# func(20)
+
+# ================
