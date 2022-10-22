@@ -93,67 +93,65 @@
 # func(14)
 
 # ============================= Programs Of Function =============================
-'''def greeting(username):
-    print(f'Hello, {username.title()}!')
+# def greeting(username):
+#     print(f'Hello, {username.title()}!')
 
 
-greeting('Amin')'''
-# =====================================================
-
-
-'''def names(fname, lname):
-    full_name = f'{fname} {lname}'
-    return full_name.title()
-
-
-while True:
-    print("\nEnter 'q' to quit the program ")
-    print('Please Tell Me Your Name: ')
-    FName = input('First Name: ')
-    if FName == 'q':
-        break
-    LName = input('Last Name: ')
-    if LName == 'q':
-        break
-    NAME = names(FName, LName)
-    print(f'\nHello, {NAME}!')'''
-
-# =====================================================
-'''
-
-def greeting(names):
-    for name in names:
-        message = f'Hello, {name}!'
-        print(message)
-
-
-usernames = ['Haris', 'Amin', 'Bilal']
-greeting(usernames)'''
+# greeting('Amin')
 
 # =====================================================
 
 
-'''def makingPizza(*flavours):  # * makes the argument in form of tuple
-    print('\nWe Have Variety of Pizza Flavours,\nWe have Following flavours ')
-    for flavour in flavours:
-        print(f'{flavour}')
+# def names(fname, lname):
+#     full_name = f'{fname} {lname}'
+#     return full_name.title()
 
 
-flavours = ('Fajita', 'Lava', 'Tikka', 'Afghani feast')
-makingPizza(flavours)
-makingPizza('Fishy Tikka')
-makingPizza('Fishy Tikka', 'Boost Tikka')
-makingPizza('Fishy Tikka', 'Boost Tikka', 'Amin ka Tikka')'''
+# while True:
+#     print("\nEnter 'q' to quit the program ")
+#     print('Please Tell Me Your Name: ')
+#     FName = input('First Name: ')
+#     if FName == 'q':
+#         break
+#     LName = input('Last Name: ')
+#     if LName == 'q':
+#         break
+#     NAME = names(FName, LName)
+#     print(f'\nHello, {NAME}!')
 
 # =====================================================
 
+# def greeting(names):
+#     for name in names:
+#         message = f'Hello, {name}!'
+#         print(message)
 
-def profileOfAmin(fname, lname, **userInfo):
-    userInfo['first name'] = fname
-    userInfo['last name'] = lname
-    return userInfo
+
+# usernames = ['Haris', 'Amin', 'Bilal']
+# greeting(usernames)
+
+# =====================================================
+
+# def makingPizza(*flavours):  # * makes the argument in form of tuple
+#     print('\nWe Have Variety of Pizza Flavours,\nWe have Following flavours ')
+#     for flavour in flavours:
+#         print(f'{flavour}')
 
 
-user_profile = profileOfAmin('Amin', 'Ahmed',
-                             My_class='eight', My_school='happy home', location='gulshan', field='python')
-print(user_profile)
+# flavours = ('Fajita', 'Lava', 'Tikka', 'Afghani feast')
+# makingPizza(flavours)
+# makingPizza('Fishy Tikka')
+# makingPizza('Fishy Tikka', 'Boost Tikka')
+# makingPizza('Fishy Tikka', 'Boost Tikka', 'Amin ka Tikka')
+
+# =====================================================
+
+# def profileOfAmin(fname, lname, **userInfo):
+#     userInfo['first name'] = fname
+#     userInfo['last name'] = lname
+#     return userInfo
+
+
+# user_profile = profileOfAmin('Amin', 'Ahmed',
+#                              My_class='eight', My_school='happy home', location='gulshan', field='python')
+# print(user_profile)
