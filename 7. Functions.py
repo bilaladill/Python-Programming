@@ -8,6 +8,7 @@
 # print(myFunction)
 # print(myFunction())
 
+# ========================
 
 # def myFunc():  # defining a function
 #     print('Function has been Executed!!')
@@ -24,6 +25,7 @@
 
 # Function1('Haris', 'French Fries')
 
+# ===================
 
 # def add(a, b):
 #     print(a*b)
@@ -155,3 +157,5 @@
 # user_profile = profileOfAmin('Amin', 'Ahmed',
 #                              My_class='eight', My_school='happy home', location='gulshan', field='python')
 # print(user_profile)
+
+# sir kiya hum function k argument mai integers use nahi karsakhte? functions practice line 20
