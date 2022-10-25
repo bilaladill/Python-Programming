@@ -135,4 +135,82 @@
 
 # func(20)
 
-# ================
+# ======================= Making Programs Of Functions ============================
+
+# def greeting(username):
+#     print(f'Hello! {username.upper()}')
+
+
+# greeting('bilal')
+
+# ====================
+
+# def greeting(username):
+#     print(f'Hello! {username.title()}')
+
+
+# greeting('bilal')
+
+# ====================
+
+
+# def names(fname, lname):
+#     fullName = f'{fname} {lname}'
+#     return fullName.title()
+
+
+# while True:
+#     print("Enter 'q' to quit the program.")
+#     print('Please enter your name below.')
+#     FName = input('Enter your first name: ')
+#     if FName == 'q':
+#         break
+#     LName = input('Enter your last name: ')
+#     if LName == 'q':
+#         break
+#     Name = names(FName, LName)
+#     print(f'Hello {Name} how are you?')
+
+# ========================
+
+
+# def greeting(names):
+#     for name in names:
+#         message = f'Hello, {name}!'
+#         print(message)
+
+
+# usernames = ['Haris', 'Amin', 'Chaparganju']
+# greeting(usernames)
+
+# =======================
+
+# def makingPizza(*flavours):
+#     print(f'\nWe have variety of pizza flavours!\nThe flavours are:')
+#     for flavour in flavours:
+#         print(f'{flavour}')
+
+
+# flavours = ('fajita', 'tikka', 'bbq', 'afghani feast')
+# makingPizza(flavours)
+
+# pizza = str(
+#     input('Which flavour pizza do you want?\nInput here your desired flavour: '))
+# if pizza == 'fajita' or pizza == 'tikka':
+#     print("Okay! We'll serve you in 10 mins.")
+# elif pizza == 'bbq' or pizza == 'afghani feast':
+#     print("Okay! We'll serve you in 10 mins.")
+# else:
+#     print("Sorry! We don't have this flavour.")
+
+# =========================
+
+# def Profile(fname, lname, **userInfo):
+#     userInfo['Frist Name'] = fname
+#     userInfo['Last Name'] = lname
+#     return userInfo
+
+
+# userProfile = Profile('Bilal', 'Adil', Age=19, Gender='Male',
+#                       Grade='Intermediate', NationalLanguage='Urdu')
+# print(userProfile)

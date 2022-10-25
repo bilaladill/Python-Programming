@@ -95,6 +95,7 @@
 # func(14)
 
 # ============================= Programs Of Function =============================
+
 # def greeting(username):
 #     print(f'Hello, {username.title()}!')
 
