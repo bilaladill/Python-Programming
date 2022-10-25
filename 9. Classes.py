@@ -24,7 +24,7 @@
 # ============ creating class ===================
 
 
-# class MyClass:  # class name must be written as title
+# class MyClass:         # class name must be written as title
 #     x = 15
 #     y = 16
 
