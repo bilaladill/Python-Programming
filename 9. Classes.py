@@ -52,7 +52,9 @@
 # print(abc.grade)
 # print(abc.name, abc.age*5, abc.grade*3)
 
-# =========== __str__() Function (string function always returns expression) ============
+# ================== __str__() Function (string function) ===================
+
+# =========== (It Always Returns Expression) ============
 
 # class Person:
 #     def __init__(self, name, age, grade):

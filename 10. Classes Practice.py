@@ -33,7 +33,7 @@
 # print(object.y, object.x)
 # print(object.y*object.x)
 
-# =================
+# ==============
 
 # class MyClass:
 #     fname = 'Bilal'
@@ -44,6 +44,37 @@
 
 # print(object.fname)
 # print(object.lname)
-# print(object.fname + object.lname)
+# print(object.fname+' '+object.lname)
 
 # ============= __init__() Function (initialization function) =============
+
+# class person:
+#     def __init__(self, name, age, grade):
+#         self.name = name
+#         self.age = age
+#         self.grade = grade
+
+
+# abc = person('Bilal', 19, 12)
+# print(abc.name, abc.age, abc.grade)
+# print(abc.name)
+# print(abc.age)
+# print(abc.grade)
+
+# ================== __str__() Function (string function) ===================
+
+# =========== (It Always Returns Expression) ============
+
+# class Person:
+#     def __init__(self, name, age, grade):
+#         self.name = name
+#         self.age = age
+#         self.grade = grade
+#
+#     def __str__(self):
+#         return f'Name = {self.name}\nAge = {self.age}\nGrade = {self.grade}'
+
+
+# abc = Person('Bilal', 19, 12)
+
+# print(abc)
