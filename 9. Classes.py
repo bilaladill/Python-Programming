@@ -56,91 +56,91 @@
 
 # =========== (It Always Returns Expression) ============
 
-'''class Person:
-    def __init__(self, name, age, grade, tmarks):
-        self.name = name
-        self.age = age
-        self.grade = grade
-        self.tmarks = tmarks
+# class Person:
+#     def __init__(self, name, age, grade, tmarks):
+#         self.name = name
+#         self.age = age
+#         self.grade = grade
+#         self.tmarks = tmarks
 
-    def __str__(self):
-        return f'Name: {self.name}\nAge: {self.age}\nGrade: {self.grade}\nTotal Marks: {self.tmarks}'
+#     def __str__(self):
+#         return f'Name: {self.name}\nAge: {self.age}\nGrade: {self.grade}\nTotal Marks: {self.tmarks}'
 
-    def myFunc(self):
-        return f'{self.name} ko Python Seekhni Hai!'
+#     def myFunc(self):
+#         return f'{self.name} ko Python Seekhni Hai!'
 
 
-abc = Person('Haris', 16, 2, 100)  # abc is an object'''
+# abc = Person('Haris', 16, 2, 100)  # abc is an object
 
-'''print(abc)
-# print(abc.myFunc)
-print(abc.myFunc())
-
-abc.age = 50
-print(abc)
-
-del abc.age
 # print(abc)
-abc = Person('Haris', 16, 2, 100)
-print(abc)
-del abc
-print(abc)'''
+# print(abc.myFunc)
+# print(abc.myFunc())
+
+# abc.age = 50
+# print(abc)
+
+# del abc.age
+# print(abc)
+# abc = Person('Haris', 16, 2, 100)
+# print(abc)
+# del abc
+# print(abc)
 
 # ================================ Student Record System ==========================
 
 
-'''class Student:
-    pass
+# class Student:
+#     pass
 
 
-std1 = Student()
-std2 = Student()
-std3 = Student()
+# std1 = Student()
+# std2 = Student()
+# std3 = Student()
 
-print(std1)
-print(std2)
-print(std3)
+# print(std1)
+# print(std2)
+# print(std3)
 
-std1.id = '1000'
-std1.fname = 'Haris'
-std1.lname = 'Zuberi'
-std1.fatherName = 'Waris Zuberi'
+# std1.id = '1000'
+# std1.fname = 'Haris'
+# std1.lname = 'Zuberi'
+# std1.fatherName = 'Waris Zuberi'
 
-std2.id = '2000'
-std2.fname = 'Bilal'
-std2.lname = 'Adil'
-std2.fatherName = 'Adil Zuberi'
+# std2.id = '2000'
+# std2.fname = 'Bilal'
+# std2.lname = 'Adil'
+# std2.fatherName = 'Adil Zuberi'
 
-std3.id = '3000'
-std3.fname = 'Amin'
-std3.lname = 'Zuberi'
-std3.fatherName = 'Waris Zuberi'
+# std3.id = '3000'
+# std3.fname = 'Amin'
+# std3.lname = 'Zuberi'
+# std3.fatherName = 'Waris Zuberi'
 
-print(std1.id, std1.fname, std1.lname, std1.fatherName,)
-print(std2.id, std2.fname, std2.lname, std2.fatherName,)
-print(std3.id, std3.fname, std3.lname, std3.fatherName,)
-
-'''
+# print(std1.id, std1.fname, std1.lname, std1.fatherName,)
+# print(std2.id, std2.fname, std2.lname, std2.fatherName,)
+# print(std3.id, std3.fname, std3.lname, std3.fatherName,)
 
 
-class Student:
-    def __init__(self, id, fname, lname, fatherName):
-        self.id = id
-        self.fname = fname
-        self.lname = lname
-        self.fatherName = fatherName
+# ==================
 
-    def __str__(self):
-        return f'ID: {self.id}\nFull Name: {self.fname} {self.lname}\nFather Name: {self.fatherName}'
+# class Student:
+#     def __init__(self, id, fname, lname, fatherName):
+#         self.id = id
+#         self.fname = fname
+#         self.lname = lname
+#         self.fatherName = fatherName
+
+#     def __str__(self):
+#         return f'ID: {self.id}\nFull Name: {self.fname} {self.lname}\nFather Name: {self.fatherName}'
 
 
-std1 = Student('1000', 'Haris', 'Zuberi', 'Waris Zuberi')
-std2 = Student('2000', 'Bilal', 'Adil', 'Adil Zuberi')
-std3 = Student('3000', 'Amin', 'Zuberi', 'Waris Zuberi')
-print()
-print(std1)
-print()
-print(std2)
-print()
-print(std3)
-print()
+# std1 = Student('1000', 'Haris', 'Zuberi', 'Waris Zuberi')
+# std2 = Student('2000', 'Bilal', 'Adil', 'Adil Zuberi')
+# std3 = Student('3000', 'Amin', 'Zuberi', 'Waris Zuberi')
+# print()
+# print(std1)
+# print()
+# print(std2)
+# print()
+# print(std3)
+# print()
