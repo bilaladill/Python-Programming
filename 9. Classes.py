@@ -21,7 +21,7 @@
 
 # print(type(names))
 
-# ============ creating class ===================
+# ===================== creating class ==========================
 
 
 # class MyClass:         # class name must be written as title
@@ -144,3 +144,40 @@
 # print()
 # print(std3)
 # print()
+
+# ------------------------------------------------------
+import math
+
+
+class Student:
+    annual_increment = 1.10  # class variable
+
+    def __init__(self, id, fname, lname,  fatherName, group, scholarship):
+
+        self.id = id
+        self.fname = fname
+        self.lname = lname
+        self.group = group
+        self.fatherName = fatherName
+        self.scholarship = scholarship
+
+    def __str__(self):
+        return f'ID: {self.id}\nFull Name: {self.fname} {self.lname}\nFather Name: {self.fatherName}\nGroup: {self.group}\nScholarship: {self.scholarship}\nNext year Your Scholarship Will Be Increased By,\nAnnual Increment: {str(math.floor((Student.annual_increment*100)-100))}%\nIncreased Scholarship: {math.floor(self.scholarship*self.annual_increment)}'
+
+
+std1 = Student('1122', 'Haris', 'Zuberi',
+               'Waris Zuberi', 'Computer Science', 25000)
+
+std2 = Student('1123', 'Amin', 'Zuberi',
+               'Waris Zuberi', 'Computer Science', 15000)
+std3 = Student('1124', 'Bilal', 'Adil',
+               'Adil Hameed', 'Computer Programming', 20000)
+print(std1)
+print()
+print(std2)
+print()
+print(std3)
+print()
+'''# scholarship_increment = str(math.floor((Student.annual_increment*100)-100))+'%'
+scholarship_increment = math.floor((Student.annual_increment*100)-100)
+print(scholarship_increment)'''
