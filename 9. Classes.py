@@ -52,7 +52,7 @@
 # print(abc.grade)
 # print(abc.name, abc.age*5, abc.grade*3)
 
-# ================== __str__() Function (string function)==================
+# ================== __str__() Function (string function) ==================
 
 # =========== (It Always Returns Expression) ============
 
@@ -198,13 +198,15 @@
 #             return f'First Name: {self.first_name}\nMiddle Name: {self.middle_name}\nLast Name: {self.last_name}\nSalary: {self.salary}'
 #         else:
 #             return f'First Name: {self.first_name}\nLast Name: {self.last_name}\nSalary: {self.salary}'
+
 # emp1 = Employee('Muhammad', 'Taimoor', 100000, 'Salahuddin')
 # emp2 = Employee('Azam', 'Shaheed', 120000)
+
 # print(emp1)
 # print()
 # print(emp2)
 
-# =======================Class with class variables======================
+# ======================= Class with class variables ======================
 
 # import math
 # class Employee:
@@ -221,7 +223,7 @@
 #
 #     def __str__(self):
 #         return f'{self.first_name} | {self.last_name} | {self.salary} | {self.middle_name}'
-#     # def __str__(self):
+#     def __str__(self):
 #         '''if self.middle_name != "":
 #             return f'First Name: {self.first_name}\nMiddle Name: {self.middle_name}\nLast Name: {self.last_name}\nSalary: {self.salary}\nAnnual Salary Increment: {math.floor((self.salary_increment*100)-100)}%\nIncreased Salary: {math.floor(self.salary*self.salary_increment)}'
 #         else:
