@@ -206,60 +206,65 @@
 # ====================== class with methods =========================
 
 # class student:
-#     def __init__(self, fname, lname, fatName, age, group, fees, middleName=''):
+#
+#     def __init__(self, fname, lname, father_name, age, group, fees, middle_name=''):
 #         self.fname = fname
 #         self.lname = lname
-#         self.fatName = fatName
+#         self.father_name = father_name
 #         self.age = age
 #         self.group = group
 #         self.fees = fees
-#         self.middleName = middleName
-#
+#         self.middle_name = middle_name
+
 #     def __str__(self):
-#         if self.middleName != '':
-#             return f'Name: {self.fname} {self.middleName} {self.lname}\nFather Name: {self.fatName}\nAge: {self.age}\nGroup: {self.group}\nFees: {self}'
-#
+#         if self.middle_name != '':
+#             return f'Name: {self.fname} {self.middle_name} {self.lname}\nFather Name: {self.father_name}\nAge: {self.age}\nGroup: {self.group}\nFees: {self.fees}'
+
 #         else:
-#             return f'Name: {self.fname} {self.lname}\nFather Name: {self.fatName}\nAge: {self.age}\nGroup: {self.group}\nFees: {self.fees}'
-#
-#
+#             return f'Name: {self.fname} {self.lname}\nFather Name: {self.father_name}\nAge: {self.age}\nGroup: {self.group}\nFees: {self.fees}'
+
+
 # std1 = student('Jhanzeb', 'shakir', 'Shakir Ali', 12, 4, 5000)
 # std2 = student('Hadi', 'Ahmed', 'Ahmed Malik', 13, 5, 7000, 'Bin')
 
+# print()
 # print(std1)
+# print()
 # print(std2)
+# print()
 
 # ==================== Class with class variables =====================
 
-import math
+# import math
 
 
-class employee:
+# class employee:
+#
+#     numberOfEmployees = 0
+#     salaryIncrement = 1.10
+#
+#     def __init__(self, fname, lname, salary, middleName=''):
+#         self.fname = fname
+#         self.lname = lname
+#         self.middleName = middleName
+#         self.salary = salary
+#
+#         employee.numberOfEmployees += 1
+#
+#     def __str__(self):
+#         if self.middleName != '':
+#             return f'First Name: {self.fname}\nMiddle Name: {self.middleName}\nLast Name: {self.lname}\nSalary: {self.salary}\nAnnual Increment: {math.floor((self.salaryIncrement*100)-100)}%\nIncreased Salary: {math.floor(self.salary*self.salaryIncrement)}'
+#
+#         else:
+#             return f'First Name: {self.fname}\nLast Name: {self.lname}\nSalary: {self.salary}\nAnnual Increment: {math.floor((self.salaryIncrement*100)-100)}%\nIncreased Salary: {math.floor(self.salary*self.salaryIncrement)}'
 
-    numberOfEmployees = 0
-    salaryIncrement = 1.10
 
-    def __init__(self, fname, lname, salary, middleName=''):
-        self.fname = fname
-        self.lname = lname
-        self.middleName = middleName
-        self.salary = salary
-
-        employee.numberOfEmployees += 1
-
-    def __str__(self):
-        if self.middleName != '':
-            return f'First Name: {self.fname}\nMiddle Name: {self.middleName}\nLast Name: {self.lname}\nSalary: {self.salary}\nAnnual Increment: {math.floor((self.salaryIncrement*100)-100)}%\nIncreased Salary: {math.floor(self.salary*self.salaryIncrement)}'
-
-        else:
-            return f'First Name: {self.fname}\nLast Name: {self.lname}\nSalary: {self.salary}\nAnnual Increment: {math.floor((self.salaryIncrement*100)-100)}%\nIncreased Salary: {math.floor(self.salary*self.salaryIncrement)}'
-
-
-emp1 = employee('Muhammad', 'Taimoor', 100000, 'Salahuddin')
-emp2 = employee('Azam', 'Shaheed', 120000)
-
-print(emp1)
-print()
-print(emp2)
-print()
-print(f'Total Employees: {employee.numberOfEmployees}')
+# emp1 = employee('Muhammad', 'Taimoor', 100000, 'Salahuddin')
+# emp2 = employee('Azam', 'Shaheed', 120000)
+#
+# print()
+# print(emp1)
+# print()
+# print(emp2)
+# print()
+# print(f'Total Employees: {employee.numberOfEmployees}')
