@@ -248,3 +248,28 @@
 #
 # emp_str1 = Employee.from_string(emp3)
 # print(emp_str1)
+
+class Employee:
+
+    def __init__(self, fname, lname, salary, mname=''):
+        self.fname = fname
+        self.lname = lname
+        self.salary = salary
+        self.mname = mname
+
+    def __str__(self):
+        if self.mname != '':
+            return f'Name: {self.fname} {self.mname} {self.lname}\nSalary: {self.salary}'
+        else:
+            return f'Name: {self.fname} {self.lname}\nSalary: {self.salary}'
+
+
+emp1 = Employee('Haris', 'Zuberi', 150000)
+emp2 = Employee('Amin', 'Zuberi', 145000)
+emp3 = Employee('Bilal', 'Hameed', 145000)
+print(emp1)
+print()
+print(emp2)
+print()
+print(emp3)
+print()
