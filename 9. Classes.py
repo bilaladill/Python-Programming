@@ -275,5 +275,43 @@
 # print()
 # print(emp3)
 # print()
-
 # ===================================
+
+
+class Employee:
+    def __init__(self, fname, lname, salary, mname='', cell_no=''):
+        self.fname = fname
+        self.lname = lname
+        self.salary = salary
+        self.mname = mname
+        self.cell_no = cell_no
+
+    '''def __str__(self):
+        if self.mname != '':
+            return f'Name: {self.fname} {self.mname} {self.lname}\nSalary: {self.salary}'
+        else:
+            return f'Name: {self.fname} {self.lname}\nSalary: {self.salary}'''
+
+    @classmethod
+    def ifno(cls, name):
+        fname, lname, mname, salary, cell_no = name
+
+        if mname != '':
+            return cls(f'Name: {fname} {mname} {lname}\nPhone Number: {cell_no}\nSalary: {salary}')
+        else:
+            return cls(f'Name: {fname} {lname}\nPhone Number: {cell_no}\nSalary: {salary}')
+
+    '''@classmethod
+    def from_string(cls, emp_str):
+        fname, lname, salary, mname = emp_str.split('_')
+        return cls(fname, lname, salary, mname)'''
+
+
+# emp4 = 'Farhan_Shah_555-100000_Qadir'
+# print(Employee.from_string(emp4))
+'''emp1 = Employee('Bilal', 'Hameed', 150000, mname='Adil', cell_no='03060272415')'''
+emp1 = 'Bilal', 'Hameed', 'Adil', 150000, '03060272415'
+
+print()
+print()
+print(Employee.ifno(emp1))
