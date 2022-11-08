@@ -277,41 +277,68 @@
 # print()
 # ===================================
 
+# from datetime import date
 
-class Employee:
-    def __init__(self, fname, lname, salary, mname='', cell_no=''):
-        self.fname = fname
-        self.lname = lname
-        self.salary = salary
-        self.mname = mname
-        self.cell_no = cell_no
 
-    '''def __str__(self):
-        if self.mname != '':
-            return f'Name: {self.fname} {self.mname} {self.lname}\nSalary: {self.salary}'
+# class Employee:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+#     @classmethod
+#     def from_Employee(cls, name, year):
+#         return cls(name, date.today().year - year)
+#
+#     def display(self):
+#         print(f'Name: {self.name}\nAge: {self.age}')
+#
+#     @staticmethod
+#     def isAdult():
+#         Age = int(input('Enter your Age: '))
+#         if Age <= 17:
+#             return print('You Are teenAger!! Cute Small Baby!!')
+#         else:
+#             return print('You Are An Adult!! Budhy')
+#
+#
+# emp1 = Employee('Haris', 16)
+# emp2 = Employee.from_Employee('Haris', 2006)
+# emp1.display()
+
+# print(emp1.age)
+# print(emp2.age)
+# Employee.isAdult()
+
+# ======================== Inheritance ============================
+
+
+class Employee:  # Parent Class
+
+    def __init__(self, fname, lname, pay):
+        self.name = fname + ' '+lname
+        self.pay = pay
+        self.email = fname+'.'+lname+'@decency.com'
+
+    def fullname(self):
+        return print(f'Name: {self.name}\nEmail: {self.email}\nSalary: {self.pay}')
+
+
+emp1 = Employee('Bilal', 'Adil', 100000)
+emp1.fullname()
+
+
+class Developer(Employee):
+    raise_amt = 1.10
+
+    def __init__(self, fname, lname, pay, prog_lang):
+        super().__init__(fname, lname, pay)
+        self.prog_lang = prog_lang
+
+
+class Manager(Employee):
+    def __init__(self, fname, lname, pay, employees=None):
+        super().__init__(fname, lname, pay)
+        if employees is None:
+            self.employees = []
         else:
-            return f'Name: {self.fname} {self.lname}\nSalary: {self.salary}'''
-
-    @classmethod
-    def ifno(cls, name):
-        fname, lname, mname, salary, cell_no = name
-
-        if mname != '':
-            return cls(f'Name: {fname} {mname} {lname}\nPhone Number: {cell_no}\nSalary: {salary}')
-        else:
-            return cls(f'Name: {fname} {lname}\nPhone Number: {cell_no}\nSalary: {salary}')
-
-    '''@classmethod
-    def from_string(cls, emp_str):
-        fname, lname, salary, mname = emp_str.split('_')
-        return cls(fname, lname, salary, mname)'''
-
-
-# emp4 = 'Farhan_Shah_555-100000_Qadir'
-# print(Employee.from_string(emp4))
-'''emp1 = Employee('Bilal', 'Hameed', 150000, mname='Adil', cell_no='03060272415')'''
-emp1 = 'Bilal', 'Hameed', 'Adil', 150000, '03060272415'
-
-print()
-print()
-print(Employee.ifno(emp1))
+            self.employees = employees
