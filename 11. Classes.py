@@ -312,7 +312,7 @@
 # ======================== Inheritance ============================
 
 
-class Employee:  # Parent Class
+'''class Employee:  # Parent Class
 
     def __init__(self, fname, lname, pay):
         self.name = fname + ' '+lname
@@ -342,3 +342,51 @@ class Manager(Employee):
             self.employees = []
         else:
             self.employees = employees
+'''
+
+fname = input('Enter Your First name: ')
+lname = input('Enter Your Last name: ')
+salary = int(input('Enter Your Salary: '))
+
+
+class Employee:
+    raise_amt = 1.10
+
+    def __init__(self, first, last, pay):
+        self.name = first + ' '+last
+        self.email = first+'_'+last + '@decency.com'
+        self.pay = pay
+
+    def bioData(self):
+        return f'\nName: {self.name}\nEmail: {self.email}\nSalary: {self.pay} Lacs\nNew Salary: {int(self.pay*self.raise_amt)}'
+
+
+class Developer(Employee):
+    def __init__(self, first, last, pay, prog_lang):
+        super().__init__(first, last, pay)
+        self.prog_lang = prog_lang
+
+
+class Manager(Employee):
+    def __init__(self, first, last, pay, employees=None):
+        super().__init__(first, last, pay)
+        if employees is None:
+            self.employees = []
+        else:
+            self.employees = employees
+
+    def add_emp(self, emp):
+        if emp not in self.employees:
+            self.employees.append(emp)
+
+    def remove_emp(self, emp):
+        if emp in self.employees:
+            self.employees.remove(emp)
+
+    def print_emps(self):
+        for emp in self.employees:
+            print('-->', emp.bioData())
+
+
+emp1 = Employee(fname, lname, salary)
+print(emp1.bioData())
