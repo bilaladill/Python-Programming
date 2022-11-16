@@ -83,7 +83,7 @@ std5 = {
     'Section': 'q',
     'Total Marks': 100,
     'Obtained Marks': 3,
-    'Percentage': '3%'
+    'Percentage': (3/100)*100
 }
 print(std1)
 print()
