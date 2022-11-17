@@ -25,6 +25,7 @@
 
 # print(myDict.keys())
 # print(myDict.values())
+
 # print(len(myDict))
 # print(type(myDict))
 
@@ -32,7 +33,6 @@
 
 # ====================== Adding Items ========================
 
-# print(myDict)
 # newItem = myDict.keys()
 # print(newItem)
 # myDict['School'] = 'City School'
@@ -54,8 +54,6 @@
 # print(myDict)
 
 # ====================== Removing Items ========================
-
-# === pop (It deletes/remove the last item or given item in argument from list or dictionary ) ===
 
 # myDict.popitem()  # == popitem deletes the last item of dictionary or list ==
 # print(myDict)
