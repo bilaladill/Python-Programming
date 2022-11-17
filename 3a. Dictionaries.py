@@ -74,12 +74,99 @@
 
 # ============================= Loops In Dictionaries ================================
 
-myDict = {
-    'Name': 'Bilal',
-    'Class': 12,
-    'Age': 19,
-    'Course': 'Programming',
-    'Total Marks': 300,
-    'Obtained Marks': 225,
-    'Percentage': (225/300)*100
-}
+# myDict = {
+#     'Name': 'Bilal',
+#     'Class': 12,
+#     'Age': 19,
+#     'Course': 'Programming',
+#     'Total Marks': 300,
+#     'Obtained Marks': 225,
+#     'Percentage': (225/300)*100
+# }
+
+# print(myDict)
+
+# for itemKeys in myDict:   # == we can give any name by our choice at the place of itemKeys ==
+#     print(itemKeys)
+
+# for itemValues in myDict:   # == we can give any name by our choice at the place of itemValues ==
+#     print(myDict[itemValues])
+
+# for keys in myDict.keys():
+#     print(keys)
+
+# for values in myDict.values():
+#     print(values)
+
+# for items in myDict.items():  # == The ans will be in tuples and we cannot change anything in tuples ==
+#     print(items)
+
+# ============================= Copying A Dictionary ================================
+
+# myDict = {
+#     'Name': 'Bilal',
+#     'Class': 12,
+#     'Age': 19,
+#     'Course': 'Programming',
+#     'Total Marks': 300,
+#     'Obtained Marks': 225,
+#     'Percentage': (225/300)*100
+# }
+
+# NewDict1 = myDict.copy()
+# print(NewDict1)
+
+# newDict2 = dict(myDict)
+# print(newDict2)
+
+# ============================= Nested Dictionary ================================
+
+# == When there are more dictionaries in a dictionary then it is called Nested Dictionary ==
+
+# ClassSubjects1 = {
+#     'Class1': {
+#         'Subject1': 'Urdu',
+#         'Subject2': 'English',
+#         'Subject3': 'Islamiat',
+#     },
+#     'Class2': {
+#         'Subject1': 'Physics',
+#         'Subject2': 'Chemistry',
+#         'Subject3': 'Math',
+#     },
+#     'Class3': {
+#         'Subject1': 'History',
+#         'Subject2': 'Geography',
+#         'Subject3': 'Arts',
+#     }
+# }
+
+# print(ClassSubjects1)
+
+# ======= Another Method =======
+
+# Class1 = {
+#     'Subject1': 'Urdu',
+#     'Subject2': 'English',
+#     'Subject3': 'Islamiat'
+# }
+
+# Class2 = {
+#     'Subject1': 'Physics',
+#     'Subject2': 'Chemistry',
+#     'Subject3': 'Math'
+# }
+
+# Class3 = {
+#     'Subject1': 'History',
+#     'Subject2': 'Geography',
+#     'Subject3': 'Arts'
+# }
+
+# ClassSubjects2 = {
+#     'Class1': Class1,
+#     'Class2': Class2,
+#     'Class3': Class3
+# }
+
+# print(ClassSubjects2)
