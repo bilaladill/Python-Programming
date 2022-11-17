@@ -170,3 +170,74 @@
 # }
 
 # print(ClassSubjects2)
+
+# ============================= Methods In Dictionaries ================================
+
+# myDict = {
+#     'Name': 'Bilal',
+#     'Class': 12,
+#     'Age': 19,
+#     'Course': 'Programming',
+#     'Total Marks': 300,
+#     'Obtained Marks': 225,
+#     'Percentage': (225/300)*100
+# }
+
+# print(myDict)
+
+# =============== copy() =================
+
+# newDict = myDict.copy()
+# print(newDict)
+
+# ================ get() =================
+
+# print(myDict.get('Course'))
+# print(myDict.get('Name'))
+
+# =============== items() =================
+
+# print(myDict.items())
+
+# =============== keys() =================
+
+# print(myDict.keys())
+
+# =============== values() =================
+
+# print(myDict.values())
+
+# =============== update() =================
+
+# myDict.update({'Class Section': 'A'})
+# print(myDict)
+
+# =============== pop() =================
+
+# myDict.pop('Age')
+# print(myDict)
+
+# =============== popitem() =================
+
+# myDict.popitem()
+# print(myDict)
+
+# =============== fromkeys() =================
+
+# keys = ('A', 'B', 'C')
+# values = 8
+# newDict = dict.fromkeys(keys, values)
+# print(newDict)
+
+# =============== setdefault() =================
+
+# myDict.setdefault('Name', 'Haris')
+# print(myDict)
+
+# myDict.setdefault('Names', 'Haris')
+# print(myDict)
+
+# =============== clear() =================
+
+# myDict.clear()
+# print(myDict)
