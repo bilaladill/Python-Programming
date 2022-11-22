@@ -1,4 +1,4 @@
-# ===== 30-sep-22 =====
+    # ===== 30-sep-22 =====
 
 # import math
 # name = str(input('enter your name: '))
@@ -58,4 +58,44 @@ print(
 # myInformation = Bilal('Bilal', 'Adil', 'Cricket')
 # print(myInformation)
 # print(Bilal.myinfo())
-#
+
+# ========= 19 - Nov - 22 ===========
+
+# Sample Programe by Sir Firhan
+
+'''import math
+numberofStudents, totalMarks, studentName, studentAge, studentClass, studentMarks = 5, 500, [], [], [], []
+
+for student in range(1, numberofStudents):
+    global name, age, grade, marks
+
+    name = input('Enter Your name: ')
+    age = input('Enter Your Age: ')
+    grade = input('Enter Your Class: ')
+    marks = int(input('Enter Your Marks: '))
+
+    studentName.append(name)
+    studentAge.append(age)
+    studentClass.append(grade)
+    studentMarks.append(marks)
+
+print(studentName, studentAge, studentClass, studentMarks)
+
+
+def result():
+    return print(f'student Name: {studentName[index]}\nstudent Age:{studentAge[index]}\nstudent Grade:{studentClass[index]} \nObtained Marks:{studentMarks[index]}\nPercentage:{math.floor((studentMarks[index]/totalMarks)*100)}%\ncomment: Congrats! You Got First Position!!')
+
+
+if studentMarks[0] > (studentMarks[1] and studentMarks[2] and studentMarks[3]):
+    index = 0
+    result()
+elif studentMarks[1] > (studentMarks[0] and studentMarks[2] and studentMarks[3]):
+    index = 1
+    result()
+elif studentMarks[2] > (studentMarks[1] and studentMarks[1] and studentMarks[3]):
+    index = 2
+    result()
+else:
+    index = 3
+    result()
+'''

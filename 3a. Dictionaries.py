@@ -166,7 +166,6 @@
 #     'Class2': Class2,
 #     'Class3': Class3
 # }
-
 # print(ClassSubjects2)
 
 # ============================= Methods In Dictionaries ================================
