@@ -60,9 +60,10 @@
 
 # ===================== 19 - Nov - 22 ======================
 
-# Sample Programe by Sir Firhan
+# ====== Sample Programe by Sir Firhan ======
 
 # import math
+
 # numberofStudents, totalMarks, studentName, studentAge, studentClass, studentMarks = 5, 500, [], [], [], []
 # 
 # for student in range(1, numberofStudents):
@@ -100,3 +101,37 @@
 
 # ========================
 
+total_employees, employee_name, employee_age, employee_rank, employee_salary = 5, [], [], [], []
+
+for employee in range(1, total_employees):
+    global name,age,rank,salary
+    
+    name = (input('Name: '))
+    age = (input('Age: '))
+    rank = (input('Rank: '))
+    salary = (input('Salary: '))
+    
+    employee_name.append(name)
+    employee_age.append(age)
+    employee_rank.append(rank)
+    employee_salary.append(salary)
+    
+print(employee_name, employee_age, employee_rank, employee_salary)
+
+def employee_details():
+    return print(f'Employee Name: {employee_name[index]}\nEmployee Age: {employee_age[index]}\nEmployee Rank: {employee_rank[index]}\nEmployee Salary: {employee_salary[index]}\n{employee_name[index]} Has The Best Rank In The Office!')
+
+if employee_rank[0] > (employee_rank[1] and employee_rank[2] and employee_rank[3]):
+    index = 0
+    employee_details()
+elif employee_rank[1] > (employee_rank[0] and employee_rank[2] and employee_rank[3]):
+    index = 1
+    employee_details()
+elif employee_rank[2] > (employee_rank[1] and employee_rank[1] and employee_rank[3]):
+    index = 2
+    employee_details()
+else:
+    index = 3
+    employee_details()
+    
+    
