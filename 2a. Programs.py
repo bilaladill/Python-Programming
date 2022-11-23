@@ -101,7 +101,7 @@
 
 # ========================
 
-total_employees, employee_name, employee_age, employee_rank, employee_salary = 5, [], [], [], []
+'''total_employees, employee_name, employee_age, employee_rank, employee_salary = 5, [], [], [], []
 
 for employee in range(1, total_employees):
     global name,age,rank,salary
@@ -133,5 +133,85 @@ elif employee_rank[2] > (employee_rank[1] and employee_rank[1] and employee_rank
 else:
     index = 3
     employee_details()
+'''    
+   
+# ============== 23 Nov 22 ================
+
+# ========= Logic Building ===========
+
+# import math
+# 
+# school = 'Early Learning School'
+# name = input('Name: ') 
+# age = int(input('Age: ')) 
+# grade = int(input('Class: ')) 
+# section = input('Section: ') 
+# obtained_marks = int(input('Obtained Marks: ')) 
+# total_marks = 500 
+# percentage = math.floor((obtained_marks/total_marks)*100) 
+# 
+# print(f'\n \n------- {school} -------\n---------- Report Card ----------\nName: {name}\nAge: {age}\nClass: {grade}{section}\nObtained Marks: {obtained_marks}\nTotal Marks: {total_marks}\nPercentage: {percentage}')
+# 
+# if percentage >=80 and percentage <= 100:
+#     print('Grade: A+\n-------- Congratulations --------')
+#     
+# elif percentage >=70 and percentage <= 79:
+#     print('Grade: A\n-------- Congratulations --------')
+#     
+# elif percentage >= 60 and percentage <= 69:
+#     print('Grade: B\n-------- Congratulations --------')
+#     
+# elif percentage >= 50 and percentage <= 59:
+#     print('Grade: C\n-------- Congratulations --------')
+#     
+# else:
+#     print('Grade: Fail\n---------- Work Hard ----------')    
     
+# ===============================
+
+'''
+import math
+
+total_students, stdName, stdAge, stdGrade, stdSec, stdOM, stdTM, stdPerc, stdPos = 4, [], [], [], [], [], [], [], [] 
+
+for students in range(1, total_students):
+    global name, age, grade, section, obtained_marks, total_marks, percentage 
+
+    name = input('Name: ') 
+    age = int(input('Age: ')) 
+    grade = int(input('Class: ')) 
+    section = input('Section: ') 
+    obtained_marks = int(input('Obtained Marks: ')) 
+    total_marks = 500 
+    percentage = math.floor((obtained_marks/total_marks)*100) 
     
+    stdName.append(name)
+    stdAge.append(age)
+    stdGrade.append(grade)
+    stdSec.append(section)
+    stdOM.append(obtained_marks)
+    stdTM.append(total_marks)
+    stdPerc.append(percentage)
+    stdPos.append()
+
+print(stdName, stdAge, stdGrade, stdSec, stdOM, stdTM, stdPerc)
+    
+def std_result():
+    print(f'\n \n------- Early Learning School -------\n---------- Report Card ----------\nName: {name[index]}\nAge: {age[index]}\nClass: {grade[index]}{section[index]}\nObtained Marks: {obtained_marks[index]}\nTotal Marks: {total_marks[index]}\nPercentage: {percentage[index]}\nPositon: {}')
+
+if percentage >=80 and percentage <= 100:
+    print('Grade: A+\n-------- Congratulations --------')
+    
+elif percentage >=70 and percentage <= 79:
+    print('Grade: A\n-------- Congratulations --------')
+    
+elif percentage >= 60 and percentage <= 69:
+    print('Grade: B\n-------- Congratulations --------')
+    
+elif percentage >= 50 and percentage <= 59:
+    print('Grade: C\n-------- Congratulations --------')
+    
+else:
+    print('Grade: Fail\n---------- Work Hard ----------')
+'''
+
