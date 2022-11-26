@@ -100,8 +100,8 @@
 #     result()
 
 # ========================
-
-'''total_employees, employee_name, employee_age, employee_rank, employee_salary = 5, [], [], [], []
+'''
+total_employees, employee_name, employee_age, employee_rank, employee_salary = 5, [], [], [], []
 
 for employee in range(1, total_employees):
     global name,age,rank,salary
@@ -127,13 +127,13 @@ if employee_rank[0] > (employee_rank[1] and employee_rank[2] and employee_rank[3
 elif employee_rank[1] > (employee_rank[0] and employee_rank[2] and employee_rank[3]):
     index = 1
     employee_details()
-elif employee_rank[2] > (employee_rank[1] and employee_rank[1] and employee_rank[3]):
+elif employee_rank[2] > (employee_rank[0] and employee_rank[2] and employee_rank[3]):
     index = 2
     employee_details()
 else:
     index = 3
     employee_details()
-'''    
+'''
    
 # ============== 23 Nov 22 ================
 
