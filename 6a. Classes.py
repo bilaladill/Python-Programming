@@ -286,8 +286,8 @@
 #         self.age = age
 #
 #     @classmethod
-#     def from_Employee(cls, name, year):
-#         return cls(name, date.today().year - year)
+#     def from_Employee(cls, name, birthYear):
+#         return cls(name, date.today().year - birthYear)
 #
 #     def display(self):
 #         print(f'Name: {self.name}\nAge: {self.age}')
@@ -420,6 +420,7 @@ print(emp1.bioData())
 # print(database)
 
 # ========= Modules (IT IS USED IN WHOLE PYTHON) ===========
+
 # import math
 # def sin(a):
 #     return print(math.sin(a))

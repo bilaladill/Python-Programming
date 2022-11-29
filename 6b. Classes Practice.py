@@ -268,3 +268,68 @@
 # print(emp2)
 # print()
 # print(f'Total Employees: {employee.numberOfEmployees}')
+
+# =======================
+
+# class Employee:
+    
+#     def __init__(self, fname, lname, age, salary, mname=''):
+#         self.fname = fname
+#         self.lname = lname
+#         self.age = age
+#         self.salary = salary
+#         self.mname = mname
+        
+#     def __str__(self):
+#         if self.mname != '':
+#             return f'Name: {self.fname} {self.mname} {self.lname}\nAge: {self.age}\nSalary: {self.salary}'
+#         else:
+#             return f'Name: {self.fname} {self.lname}\nAge: {self.age}\nSalary: {self.salary}'
+         
+# emp1 = Employee('Aqib', 'Jafri', 22, 12000)
+# emp2 = Employee('Amin', 'Zuberi', 23, 13000, 'Ahmed')
+# emp3 = Employee('Hassan', 'Jhangir', 24, 14000)
+# emp4 = Employee('Wasim', 'Khan', 25, 15000, 'Akhtar')
+ 
+# print(emp1)
+# print()
+# print(emp2)
+# print()
+# print(emp3)
+# print()
+# print(emp4)
+# print()
+
+# ========================
+
+# from datetime import date
+
+# class Employee:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+        
+#     @classmethod
+#     def from_Employee(cls, name, birthYear):
+#         return cls(name, date.today().year - birthYear)
+    
+#     def display(self):
+#         print(f'Name: {self.name}\nAge: {self.age}')
+        
+#     @staticmethod
+#     def isAdult():
+#         age = int(input('Enter your age: '))
+#         if age <= 17:
+#             return print(f'You are not an adult uptill now!')
+#         else:
+#             return print(f'Wow you are an adult!')
+        
+# emp1 = Employee('Qazi', 16)
+# emp2 = Employee.from_Employee('Saim', 1995)
+
+# print(emp1.age)
+# print(emp2.age)
+# Employee.isAdult()
+
+# ============= Scope (USED IN WHOLE PYTHON) ==============
+
