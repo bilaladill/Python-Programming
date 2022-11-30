@@ -333,3 +333,44 @@
 
 # ============= Scope (USED IN WHOLE PYTHON) ==============
 
+# def Student():
+#     global b
+#     a = 9
+#     b = 2
+#     print(a)
+#     print(a*b)
+#     
+# Student()
+# print(b)
+
+# =============
+
+# === error in below programme ===
+
+# def results():
+#     global percentage,obt,tot,database
+#     obt = int(input('Obtained Marks: '))
+#     tot = int(input('Total Marks: '))
+#     percentage = (obt/tot)*100
+#     database = []
+#     database.append(percentage)
+# print(percentage)
+
+# results()
+
+# print(percentage)
+# print(obt)
+# print(database)
+
+# ============= Modules (USED IN WHOLE PYTHON) ===============
+
+# import math
+
+# def sin(a):
+#     return print(math.sin(a))
+
+# sin(30)
+
+import Modules_7a 
+Modules_7a.sin(30)
+print(Modules_7a.mydict) 

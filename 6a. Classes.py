@@ -402,8 +402,9 @@ print(emp1.bioData())
 # 
 # bilal()
 # print(b)
-# 
-# 
+
+# =================== 
+
 # def results():
 #     global percentage,obt,tot,database
 #     database = []
@@ -411,11 +412,12 @@ print(emp1.bioData())
 #     tot = int(input('Total Marks'))
 #     percentage = obt/tot*100
 #     database.append(percentage)
-#     #print(percentage)
-#     
+
+# print(percentage)
+
 # results()
-# 
-# # print(percentage)
+
+# print(percentage)
 # print(obt)
 # print(database)
 
