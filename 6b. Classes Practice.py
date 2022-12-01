@@ -371,6 +371,28 @@
 
 # sin(30)
 
-import Modules_7a 
-Modules_7a.sin(30)
-print(Modules_7a.mydict) 
+# ==========
+
+# import Modules 
+# Modules.sin(30)
+# print(Modules.mydict) 
+# print(Modules.mydict.items())
+
+# ==========
+
+# import datetime
+
+# x = datetime.datetime.now()
+# print(x)
+# print(x.year)
+# print(x.hour)
+# print(x.day)
+# print(x.month)
+# print(x.minute)
+# print(x.second)
+# print(x.microsecond)
+
+# import numpy as np
+
+# ============== Try Except ================
+
