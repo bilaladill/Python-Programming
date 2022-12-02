@@ -31,67 +31,68 @@
 # total_marks = int(input('Enter Your Total Marks: '))
 # obtained_marks = int(input('Enter Your Obtained Marks: '))
 
-std1 = {
-    'Name': 'Hadi',
-    'Father Name': 'Farhan',
-    'Age': 19,
-    'Class': 4,
-    'Section': 'd',
-    'Total Marks': 100,
-    'Obtained Marks': 95,
-    'Percentage': '95%'
-}
+# std1 = {
+#     'Name': 'Hadi',
+#     'Father Name': 'Farhan',
+#     'Age': 19,
+#     'Class': 4,
+#     'Section': 'd',
+#     'Total Marks': 100,
+#     'Obtained Marks': 95,
+#     'Percentage': '95%'
+# }
+# 
+# std2 = {
+#     'Name': 'Haji',
+#     'Father Name': 'Nasrulhaq',
+#     'Age': 18,
+#     'Class': 5,
+#     'Section': 'F',
+#     'Total Marks': 100,
+#     'Obtained Marks': 76,
+#     'Percentage': '76%'
+# }
+# 
+# std3 = {
+#     'Name': 'Farhan',
+#     'Father Name': 'qadir',
+#     'Age': 91,
+#     'Class': 8,
+#     'Section': 'h',
+#     'Total Marks': 100,
+#     'Obtained Marks': 65,
+#     'Percentage': '65%'
+# }
+# 
+# std4 = {
+#     'Name': 'haris',
+#     'Father Name': 'Zuberi',
+#     'Age': 2,
+#     'Class': 1,
+#     'Section': 'w',
+#     'Total Marks': 50,
+#     'Obtained Marks': 12,
+#     'Percentage': '6%'
+# }
+# 
+# std5 = {
+#     'Name': 'Amin',
+#     'Father Name': 'khilji',
+#     'Age': 91,
+#     'Class': 2,
+#     'Section': 'q',
+#     'Total Marks': 100,
+#     'Obtained Marks': 3,
+#     'Percentage': (3/100)*100
+# }
+# print(std1)
+# print()
+# print(std2)
+# print()
+# print(std3)
+# print()
+# print(std4)
+# print()
+# print(std5)
+# print()
 
-std2 = {
-    'Name': 'Haji',
-    'Father Name': 'Nasrulhaq',
-    'Age': 18,
-    'Class': 5,
-    'Section': 'F',
-    'Total Marks': 100,
-    'Obtained Marks': 76,
-    'Percentage': '76%'
-}
-
-std3 = {
-    'Name': 'Farhan',
-    'Father Name': 'qadir',
-    'Age': 91,
-    'Class': 8,
-    'Section': 'h',
-    'Total Marks': 100,
-    'Obtained Marks': 65,
-    'Percentage': '65%'
-}
-
-std4 = {
-    'Name': 'haris',
-    'Father Name': 'Zuberi',
-    'Age': 2,
-    'Class': 1,
-    'Section': 'w',
-    'Total Marks': 50,
-    'Obtained Marks': 12,
-    'Percentage': '6%'
-}
-
-std5 = {
-    'Name': 'Amin',
-    'Father Name': 'khilji',
-    'Age': 91,
-    'Class': 2,
-    'Section': 'q',
-    'Total Marks': 100,
-    'Obtained Marks': 3,
-    'Percentage': (3/100)*100
-}
-print(std1)
-print()
-print(std2)
-print()
-print(std3)
-print()
-print(std4)
-print()
-print(std5)
-print()
