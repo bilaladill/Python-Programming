@@ -42,7 +42,8 @@
 # b = open('abc.txt','r')
 # print(b.read())
 
-# creating a new file xyz
+# creating a new file xyz ( We use x to create file )
+
 # c = open('xyz.txt','x')
 # c.close()
 
