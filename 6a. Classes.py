@@ -311,7 +311,6 @@
 
 # ======================== Inheritance ============================
 
-
 '''class Employee:  # Parent Class
 
     def __init__(self, fname, lname, pay):
@@ -391,4 +390,66 @@ class Manager(Employee):
 emp1 = Employee(fname, lname, salary)
 print(emp1.bioData())
 '''
+
+#==========================================================
+
+class Employee: # parent class
+    raise_amt = 1.05 # 5%
+    
+    def __init__(self,first,last,pay):
+        self.name = first + ' ' + last
+        self.email = first + '.' + last + '@decency.com'
+        self.pay = pay
+        
+    def fullname(self):
+        return f'{self.name}'
+    
+    def apply_raise(self):
+        self.pay = int(self.pay*self.raise_amt)
+
+class Developer(Employee): # child class
+    raise_amt = 1.10
+    
+    def __init__(self, first, last, pay,progLang):
+        super().__init__(first, last, pay)
+        self.progLang = progLang
+        
+class Manager(Employee): # child class
+    raise_amt = 1.20
+    
+    def __init__(self, first, last, pay,employees=None):
+        super().__init__(first, last, pay)
+        if employees is None:
+            self.employees = []
+        else:
+            self.employees = employees
+    
+    def add_emp(self,emp):
+        if emp not in self.employees:
+            self.employees.append(emp)
+    
+    def rem_emp(self,emp):
+        if emp in self.employees:
+            self.employees.remove(emp)
+    
+    def show_emp(self):
+        for emp in self.employees:
+            print('-->', emp.fullname())
+            
+
+
+dev_1 = Developer('farhan','qadir',6000,'Java')
+dev_2 = Developer('Haris','Ahmed',10000,'python')
+
+#print(help(Developer))
+
+print(dev_1.pay)
+dev_1.apply_raise()
+print(dev_1.pay)
+
+print(dev_2.pay)
+dev_2.apply_raise()
+print(dev_2.pay)
+
+
 
