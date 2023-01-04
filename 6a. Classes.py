@@ -311,145 +311,171 @@
 
 # ======================== Inheritance ============================
 
-'''class Employee:  # Parent Class
-
-    def __init__(self, fname, lname, pay):
-        self.name = fname + ' '+lname
-        self.pay = pay
-        self.email = fname+'.'+lname+'@decency.com'
-
-    def fullname(self):
-        return print(f'Name: {self.name}\nEmail: {self.email}\nSalary: {self.pay}')
-
-
-emp1 = Employee('Bilal', 'Adil', 100000)
-emp1.fullname()
-
-
-class Developer(Employee):
-    raise_amt = 1.10
-
-    def __init__(self, fname, lname, pay, prog_lang):
-        super().__init__(fname, lname, pay)
-        self.prog_lang = prog_lang
-
-
-class Manager(Employee):
-    def __init__(self, fname, lname, pay, employees=None):
-        super().__init__(fname, lname, pay)
-        if employees is None:
-            self.employees = []
-        else:
-            self.employees = employees
-'''
-
-'''fname = input('Enter Your First name: ')
-lname = input('Enter Your Last name: ')
-salary = int(input('Enter Your Salary: '))
+# class Employee:  # Parent Class
+# 
+#     def __init__(self, fname, lname, pay):
+#         self.name = fname + ' '+lname
+#         self.pay = pay
+#         self.email = fname+'.'+lname+'@decency.com'
+# 
+#     def fullname(self):
+#         return print(f'Name: {self.name}\nEmail: {self.email}\nSalary: {self.pay}')
+# 
+# 
+# emp1 = Employee('Bilal', 'Adil', 100000)
+# emp1.fullname()
+# 
+# 
+# class Developer(Employee):
+#     raise_amt = 1.10
+# 
+#     def __init__(self, fname, lname, pay, prog_lang):
+#         super().__init__(fname, lname, pay)
+#         self.prog_lang = prog_lang
+# 
+# 
+# class Manager(Employee):
+#     def __init__(self, fname, lname, pay, employees=None):
+#         super().__init__(fname, lname, pay)
+#         if employees is None:
+#             self.employees = []
+#         else:
+#             self.employees = employees
 
 
-class Employee:
-    raise_amt = 1.10
+# fname = input('Enter Your First name: ')
+# lname = input('Enter Your Last name: ')
+# salary = int(input('Enter Your Salary: '))
+# 
+# 
+# class Employee:
+#     raise_amt = 1.10
+# 
+#     def __init__(self, first, last, pay):
+#         self.name = first + ' '+last
+#         self.email = first+'_'+last + '@decency.com'
+#         self.pay = pay
+# 
+#     def bioData(self):
+#         return f'\nName: {self.name}\nEmail: {self.email}\nSalary: {self.pay} Lacs\nNew Salary: {int(self.pay*self.raise_amt)}'
+# 
+# 
+# class Developer(Employee):
+#     def __init__(self, first, last, pay, prog_lang):
+#         super().__init__(first, last, pay)
+#         self.prog_lang = prog_lang
+# 
+# 
+# class Manager(Employee):
+#     def __init__(self, first, last, pay, employees=None):
+#         super().__init__(first, last, pay)
+#         if employees is None:
+#             self.employees = []
+#         else:
+#             self.employees = employees
+# 
+#     def add_emp(self, emp):
+#         if emp not in self.employees:
+#             self.employees.append(emp)
+# 
+#     def remove_emp(self, emp):
+#         if emp in self.employees:
+#             self.employees.remove(emp)
+# 
+#     def print_emps(self):
+#         for emp in self.employees:
+#             print('-->', emp.bioData())
+# 
+# 
+# emp1 = Employee(fname, lname, salary)
+# print(emp1.bioData())
 
-    def __init__(self, first, last, pay):
-        self.name = first + ' '+last
-        self.email = first+'_'+last + '@decency.com'
-        self.pay = pay
-
-    def bioData(self):
-        return f'\nName: {self.name}\nEmail: {self.email}\nSalary: {self.pay} Lacs\nNew Salary: {int(self.pay*self.raise_amt)}'
-
-
-class Developer(Employee):
-    def __init__(self, first, last, pay, prog_lang):
-        super().__init__(first, last, pay)
-        self.prog_lang = prog_lang
-
-
-class Manager(Employee):
-    def __init__(self, first, last, pay, employees=None):
-        super().__init__(first, last, pay)
-        if employees is None:
-            self.employees = []
-        else:
-            self.employees = employees
-
-    def add_emp(self, emp):
-        if emp not in self.employees:
-            self.employees.append(emp)
-
-    def remove_emp(self, emp):
-        if emp in self.employees:
-            self.employees.remove(emp)
-
-    def print_emps(self):
-        for emp in self.employees:
-            print('-->', emp.bioData())
-
-
-emp1 = Employee(fname, lname, salary)
-print(emp1.bioData())
-'''
 
 #==========================================================
 
-class Employee: # parent class
-    raise_amt = 1.05 # 5%
+# class Employee: # parent class
+#     raise_amt = 1.05 # 5%
+#     
+#     def __init__(self,first,last,pay):
+#         self.name = first + ' ' + last
+#         self.email = first + '.' + last + '@decency.com'
+#         self.pay = pay
+#         
+#     def fullname(self):
+#         return f'{self.name}'
+#     
+#     def apply_raise(self):
+#         self.pay = int(self.pay*self.raise_amt)
+#         
+#     def __repr__(self):
+#         return f'\n{self.fullname()} - {self.pay}'
+#         
+#     
+# class Developer(Employee): # child class
+#     raise_amt = 1.10
+#     
+#     def __init__(self, first, last, pay,progLang):
+#         super().__init__(first, last, pay)
+#         self.progLang = progLang
+#         
+#     def __repr__(self):
+#         return f'\n{self.fullname()}\nSalary: {self.pay}\nSpeciality: {self.progLang}'
+#         
+# class Manager(Employee): # child class
+#     raise_amt = 1.20
     
-    def __init__(self,first,last,pay):
-        self.name = first + ' ' + last
-        self.email = first + '.' + last + '@decency.com'
-        self.pay = pay
-        
-    def fullname(self):
-        return f'{self.name}'
-    
-    def apply_raise(self):
-        self.pay = int(self.pay*self.raise_amt)
+#     def __init__(self, first, last, pay,employees=None):
+#         super().__init__(first, last, pay)
+#         if employees is None:
+#             self.employees = []
+#         else:
+#             self.employees = employees
+#     
+#     def add_emp(self,emp):
+#         if emp not in self.employees:
+#             self.employees.append(emp)
+#     
+#     def rem_emp(self,emp):
+#         if emp in self.employees:
+#             self.employees.remove(emp)
+#     
+#     def show_emp(self):
+#         for emp in self.employees:
+#             print('-->', emp.fullname() )
+#     def __repr__(self):
+#         return f'\n{self.fullname()}\nSalary: {self.pay}\nWorkers: {self.employees}'
+# 
+# 
+# emp_1 = Employee('Bashir','Sultan',6000)
+# emp_2 = Employee('samina','javed',6000)
+# dev_1 = Developer('farhan','qadir',6000,'Java')
+# dev_2 = Developer('Haris','Ahmed',10000,'python')
+# mgr_1 = Manager('Bilal','Adil',60000,[dev_1])
+# mgr_2 = Manager('Haris','Ahmed',100000,[dev_2])
 
-class Developer(Employee): # child class
-    raise_amt = 1.10
-    
-    def __init__(self, first, last, pay,progLang):
-        super().__init__(first, last, pay)
-        self.progLang = progLang
-        
-class Manager(Employee): # child class
-    raise_amt = 1.20
-    
-    def __init__(self, first, last, pay,employees=None):
-        super().__init__(first, last, pay)
-        if employees is None:
-            self.employees = []
-        else:
-            self.employees = employees
-    
-    def add_emp(self,emp):
-        if emp not in self.employees:
-            self.employees.append(emp)
-    
-    def rem_emp(self,emp):
-        if emp in self.employees:
-            self.employees.remove(emp)
-    
-    def show_emp(self):
-        for emp in self.employees:
-            print('-->', emp.fullname())
-            
-
-
-dev_1 = Developer('farhan','qadir',6000,'Java')
-dev_2 = Developer('Haris','Ahmed',10000,'python')
-
-#print(help(Developer))
-
-print(dev_1.pay)
-dev_1.apply_raise()
-print(dev_1.pay)
-
-print(dev_2.pay)
-dev_2.apply_raise()
-print(dev_2.pay)
-
-
-
+# print(help(Developer))
+# print(emp_1)
+# print(emp_2)
+# print(dev_1)
+# print(dev_2)
+# print(mgr_1)
+# print(mgr_2)
+# 
+# print(dev_1.pay)
+# dev_1.apply_raise()
+# print(dev_1.pay)
+# 
+# print(dev_2.pay)
+# dev_2.apply_raise()
+# print(dev_2.pay)
+# 
+# print(mgr_1.pay)
+# mgr_1.apply_raise()
+# print(mgr_1.pay)
+# 
+# print(mgr_1.email)
+# 
+# mgr_1.add_emp(dev_2)
+# mgr_1.add_emp(dev_1)
+# 
+# mgr_1.show_emp()
